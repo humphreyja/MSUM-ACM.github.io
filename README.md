@@ -1,4 +1,4 @@
-Docs
+Org Page
 ====
 
-Things you need to know before setting up your profile
+The msum-acm.github.com page
