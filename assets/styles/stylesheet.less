@@ -63,14 +63,19 @@ section{
     }
 
     h2 {
-        width: 74px;
-        height: 74px;
+        // height: 74px;
         display: block;
         margin: 0 auto;
         margin-bottom: 2.4em;
-        background-color: @articles-color;
-        background-color: silver;
+        background-color: none;
+
+        width: 74px;
+        height: 0;
+        padding: 74px 0 0 0;
+
+        background: url("../../assets/img/icons/interviews.png") no-repeat;
         text-indent: -6000px;
+        overflow: hidden;
     }
     h3, h4 {
         font-family: "Futura-CondensedMedium", Futura, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -117,20 +122,14 @@ section{
     display: block;
 }
 
-#articles {
-    h2 { background-color: @articles-color; }
-    .articles-reading { 
-        background-color: @articles-color; 
-        a:hover{ background-color: darken(@articles-color, 10%);}
-    }
+.articles-reading { 
+    background-color: @articles-color; 
+    a:hover{ background-color: darken(@articles-color, 10%);}
 }
 
-#interviews {
-    h2 { background-color: @interviews-color; }
-    .interviews-reading { 
-        background-color: @interviews-color; 
-        a:hover{ background-color: darken(@interviews-color, 10%);}
-    }
+.interviews-reading { 
+    background-color: @interviews-color; 
+    a:hover{ background-color: darken(@interviews-color, 10%);}
 }
 
 
