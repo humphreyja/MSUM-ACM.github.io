@@ -138,15 +138,13 @@ section{
 }
 
 #lists      {
-    width: 400px;
-    margin: 0 auto;
     color: @lists-color;
     h2 { background: url("../../assets/img/icons/lists-icon.png") no-repeat; }
 
     ul {
-        padding-top: 1em;
-        // background-color: darken(@clouds, 5%);
-        // background-color: fadeout(@sun-flower, 75%);
+        padding-top: 1.2em;
+    width: 350px;
+    margin: 0 auto;
     }
 
     li {
@@ -167,6 +165,32 @@ section{
         font-size: 20px;
     }
 }
+
+
+#social {
+    ul {
+        padding-top: 1.2em;
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    li {
+        padding-bottom: 0.9em;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+
+    //Gradual Fade of upto 10 elements
+    li:nth-child(1) { color: @text-color; }
+    li:nth-child(2) { color: fadeout(@text-color, 20%); }
+    li:nth-child(3) { color: fadeout(@text-color, 40%); }
+    li:nth-child(4) { color: fadeout(@text-color, 50%); }
+    li:nth-child(5) { color: fadeout(@text-color, 60%); }
+    li:nth-child(6) { color: fadeout(@text-color, 70%); }
+    li:nth-child(7) { color: fadeout(@text-color, 80%); }
+}
+
 
 #news       {
     color: @news-color;
@@ -195,6 +219,10 @@ section{
     a:hover{ background-color: darken(@interviews-color, 10%);}
 }
 
+.social-reading { 
+    background-color: @social-color; 
+    a:hover{ background-color: darken(@social-color, 10%);}
+}
 
 //interview video
 #interviews-video {
