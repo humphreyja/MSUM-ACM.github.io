@@ -63,12 +63,13 @@ section{
     }
 
     h2 {
-        width: 100px;
-        height: 100px;
+        width: 74px;
+        height: 74px;
         display: block;
         margin: 0 auto;
         margin-bottom: 2.4em;
         background-color: @articles-color;
+        background-color: silver;
         text-indent: -6000px;
     }
     h3, h4 {
@@ -111,12 +112,30 @@ section{
     font-weight: lighter;
     text-decoration: none;
     color: @clouds;
-
     // Make whole link clickable
     cursor: pointer;
     display: block;
 }
 
-.articles-reading {
-    background-color: @articles-color;
+#articles {
+    h2 { background-color: @articles-color; }
+    .articles-reading { 
+        background-color: @articles-color; 
+        a:hover{ background-color: darken(@articles-color, 10%);}
+    }
+}
+
+#interviews {
+    h2 { background-color: @interviews-color; }
+    .interviews-reading { 
+        background-color: @interviews-color; 
+        a:hover{ background-color: darken(@interviews-color, 10%);}
+    }
+}
+
+
+//interview video
+#interviews-video {
+    border: 1px solid red;
+    padding: none;
 }
