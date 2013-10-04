@@ -57,6 +57,7 @@ body {
 }
 
 section{
+    margin-bottom: 120px;
     .article-banner {
         text-align: center;
     }
@@ -71,7 +72,7 @@ section{
         text-indent: -6000px;
     }
     h3, h4 {
-        font-family: "Futura-CondensedMedium", Futura, sans-serif;
+        font-family: "Futura-CondensedMedium", Futura, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
         font-stretch: condensed;
         font-size: 24px;
         font-weight: lighter;
@@ -97,3 +98,25 @@ section{
 #lists      {color: @lists-color;}
 #news       {color: @news-color;}
 #social     {color: @social-color;}
+
+.further-reading a {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+    width: 100%;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    font-family: "Futura-CondensedMedium", Futura, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-stretch: condensed;
+    font-weight: lighter;
+    text-decoration: none;
+    color: @clouds;
+
+    // Make whole link clickable
+    cursor: pointer;
+    display: block;
+}
+
+.articles-reading {
+    background-color: @articles-color;
+}
