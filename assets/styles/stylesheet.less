@@ -26,8 +26,9 @@
 
 //Chosen Colors
 @articles-color: @emerald;
-@interviews-color:@pumpkin;
-@lists-color:@orange;
+@interviews-color:@carrot;
+// @lists-color:@sun-flower;
+@lists-color:#D7B322;
 @news-color:@amethyst;
 @social-color:@peter-river;
 
@@ -62,11 +63,11 @@ section{
         text-align: center;
     }
 
+    // This is the Sub Logo
     h2 {
         // height: 74px;
         display: block;
         margin: 0 auto;
-        margin-bottom: 2.4em;
         background-color: none;
 
         width: 74px;
@@ -77,6 +78,7 @@ section{
         text-indent: -6000px;
         overflow: hidden;
     }
+
     h3, h4 {
         font-family: "Futura-CondensedMedium", Futura, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
         font-stretch: condensed;
@@ -91,19 +93,13 @@ section{
         text-transform: uppercase;
     }
 
-    p {
+    p, ul {
         color: @text-color;
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
         font-weight: 300;
         line-height: 1.22em;
     }
 }
-
-#articles   {color: @articles-color;}
-#interviews {color: @interviews-color;}
-#lists      {color: @lists-color;}
-#news       {color: @news-color;}
-#social     {color: @social-color;}
 
 .further-reading a {
     text-align: center;
@@ -122,9 +118,76 @@ section{
     display: block;
 }
 
+#lists {
+    color: @lists-color;
+    h2 { background: url("../../assets/img/icons/lists-icon.png") no-repeat; }
+}
+
+#articles   {
+    color: @articles-color;
+    h2 { background: url("../../assets/img/icons/articles-icon.png") no-repeat; }
+}
+
+#interviews {
+    color: @interviews-color;
+    h2 { background: url("../../assets/img/icons/interviews.png") no-repeat; }
+
+    #interviews-caption {
+        text-align: center;
+    }
+}
+
+#lists      {
+    width: 400px;
+    margin: 0 auto;
+    color: @lists-color;
+    h2 { background: url("../../assets/img/icons/lists-icon.png") no-repeat; }
+
+    ul {
+        padding-top: 1em;
+        // background-color: darken(@clouds, 5%);
+        // background-color: fadeout(@sun-flower, 75%);
+    }
+
+    li {
+        list-style: none;
+        padding-bottom: 0.9em;
+    }
+
+    li:before {
+        /* For a round bullet */
+        content:'\2022';
+        display: block;
+        position: relative;
+        max-width: 0px;
+        max-height: 0px;
+        left: -20px;
+        top: -0px;
+        color: @lists-color;
+        font-size: 20px;
+    }
+}
+
+#news       {
+    color: @news-color;
+    h2 { background: url("../../assets/img/icons/news.png") no-repeat; }
+}
+
+#social     {
+    color: @social-color;
+    h2 { background: url("../../assets/img/icons/social.png") no-repeat; }
+}
+#articles h2 {
+}
+
 .articles-reading { 
     background-color: @articles-color; 
     a:hover{ background-color: darken(@articles-color, 10%);}
+}
+
+.lists-reading { 
+    background-color: @lists-color; 
+    a:hover{ background-color: darken(@lists-color, 10%);}
 }
 
 .interviews-reading { 
