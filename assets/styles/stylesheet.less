@@ -1,0 +1,99 @@
+// COLORS
+// Greens
+@turqoise:#1abc9c;
+@emerald:#2ecc71;
+@peter-river:#3498db;
+@green-sea:#16a085;
+@nephritis:#27ae60;
+@belize-hole:#2980b9;
+// Yellos & Oranges
+@sun-flower:#f1c40f;
+@carrot:#e67e22;
+@alizarin:#e74c3c;
+@orange:#f39c12;
+@pumpkin:#d35400;
+@pomegranate:#c0392b;
+// Purples
+@amethyst:#9b59b6;
+@wisteria:#8e44ad;
+// Greys
+@wet-asphalt:#34495e;
+@midnight-blue:#2c3e50;
+@clouds:#ecf0f1;
+@concrete:#95a5a6;
+@silver:#bdc3c7;
+@asbestos:#7f8c8d;
+
+//Chosen Colors
+@articles-color: @emerald;
+@interviews-color:@pumpkin;
+@lists-color:@orange;
+@news-color:@amethyst;
+@social-color:@peter-river;
+
+@text-color: #202E3F;
+
+
+// Styles
+body {
+    background-color: @clouds;
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+}
+
+#container {
+    width: 587px;
+    margin: 100px auto;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background-color: @silver;
+    text-indent: -6000px;
+}
+
+section{
+    .article-banner {
+        text-align: center;
+    }
+
+    h2 {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2.4em;
+        background-color: @articles-color;
+        text-indent: -6000px;
+    }
+    h3, h4 {
+        font-family: "Futura-CondensedMedium", Futura, sans-serif;
+        font-stretch: condensed;
+        font-size: 24px;
+        font-weight: lighter;
+        text-align: center;
+        line-height:0.1em;
+    }
+
+    h4 {
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: @text-color;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-weight: 300;
+        line-height: 1.22em;
+    }
+}
+
+#articles   {color: @articles-color;}
+#interviews {color: @interviews-color;}
+#lists      {color: @lists-color;}
+#news       {color: @news-color;}
+#social     {color: @social-color;}
