@@ -25,9 +25,13 @@
 @asbestos:#7f8c8d;
 
 //Chosen Colors
+@bg-color: @clouds;
+@banner-bg-color: @silver;
+@banner-color: @clouds;
+
 @articles-color: @emerald;
 @interviews-color:@carrot;
-// @lists-color:@sun-flower;
+
 @lists-color:#D7B322;
 @news-color:@amethyst;
 @social-color:@peter-river;
@@ -38,7 +42,7 @@
 
 // Styles
 body {
-    background-color: @clouds;
+    background-color: @bg-color;
     font-family: "Helvetica Neue";
     font-size: 18px;
 }
@@ -261,3 +265,36 @@ section{
         a { color: lighten(@clouds, 50%); }
     }
 }
+
+
+
+
+// Banner 
+body {
+    padding: 0;
+    margin: 0;
+}
+#banner {
+    width: 100%;
+    background-color: darken(@bg-color, 20%);
+    margin: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+
+    // Insert
+   -moz-box-shadow:    inset 0 -0.2em 0.7em darken(@banner-bg-color, 20%);
+   -webkit-box-shadow: inset 0 -0.2em 0.7em darken(@banner-bg-color, 20%);
+   box-shadow:         inset 0 -0.2em 0.7em darken(@banner-bg-color, 20%);
+
+
+   //Text
+   color: @banner-color;
+   font-family: 'HelveticaNeue-Light', 'Helvetica', sans-serif;
+   text-transform: uppercase;
+
+    h1 {
+        font-size: 0.8em;
+    }
+}
+
