@@ -1,0 +1,97 @@
+// Colors
+@import "fonts.less";
+// Fonts
+@import "flatuicolors.less";
+// Mixins
+@import "mixins.less";
+
+//Variables
+@body-bg-color:@peter-river;
+@footer-bg-color:@belize-hole;
+@completed-bg-color:@belize-hole;
+@comingsoon-bg-color: @belize-hole;
+
+
+body {
+    
+    background-color: @body-bg-color;
+    font-family: @ptsans-font-family;
+    font-size: 18px;
+    color: @clouds;
+}
+
+#container {
+    width: 520px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    h1, h2, h3 {
+        text-align: center;
+        font-weight: 400;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-family: @ptsansnarrow-font-family;
+        font-size: 1em;
+    }
+    
+}
+
+#statuses {
+}
+
+.project {
+    padding: 2em 1em;
+    margin-bottom: 10px;
+    color: @clouds;
+    a {
+        color: @clouds;
+        text-decoration: none;
+    }
+}
+
+.completed {
+    background-color: @completed-bg-color;
+}
+
+.comingsoon {
+    background-color: @comingsoon-bg-color;
+    .opacity(0.30);
+}
+
+#mentorbuddy { 
+}
+
+#newsandevents {
+}
+
+#articles {
+}
+
+#interviews {
+}
+
+#programmingcontests {
+}
+
+#twitterstream {
+    margin-top: 100px;
+}
+
+
+#footernotes {
+    text-align: left;
+    margin-top: 100px;
+    background-color: @footer-bg-color;
+    padding: 1em;
+    font-size: 0.8em;
+
+    h3 {
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1em;
+        padding-top: 1em;
+    }
+}

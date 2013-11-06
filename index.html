@@ -1,28 +1,71 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>MSUM ACM</title>
-    <meta name="description" content="MSUM ACM">
+  <meta charset="UTF-8">
+  <title>MSUM ACM</title>
 
-    <style type="text/css">
-      #container {
-        font-family: monospace;
-        font-size: 18px;
+  <meta name="description" content="MSUM ACM">
 
-        width: 40%;
-        margin: 0 auto;
-        margin-top: 2em;
-        padding:2em;
-        background-color: #bdc3c7;
-        color: #ecf0f1;
-      }
-    </style>
+  <!-- [pure](http://necolas.github.io/normalize.css/) -->
+  <link rel="stylesheet" href="bower_components/pure/pure-min.css">
+
+  <!-- [lesscss](http://lesscss.org) -->
+  <link rel="stylesheet/less" type="text/css" href="assets/styles/stylesheet.less">
+  <script src="bower_components/less/dist/less-1.4.2.min.js"></script>
+
+  <!-- [HTML5Shiv](https://github.com/aFarkas/html5shiv) -->
+  <!--[if lt IE 9]>
+          <script src="components/html5shiv/html5shiv.js"></script>
+  <![endif]-->
 </head>
+
 
 <body>
 <div id="container">
-  <p>Status - Propogating DNS...</p>
-</div>
+  <div id="logo">
+    <h1>MSUM ACM</h1>
+  </div>
+
+  <div id="statuses">
+      <h2>Projects</h2>
+      <div class="completed project" id="mentorbuddy">
+        <h3><a href="mailto:kadimisesr@mnstate.edu?subject=I am interested in applying to the Mentor Buddy program.">Mentor Buddy</a></h3>
+      </div>
+
+      <div class="comingsoon project" id="newsandevents">
+        <h3><a href="#">News &amp; Events</a></h3>
+      </div>
+
+      <div class="comingsoon project" id="articles">
+        <h3><a href="#">Articles</a></h3>
+      </div>
+
+      <div class="comingsoon project" id="interviews">
+        <h3><a href="#">Interviews</a></h3>
+      </div>
+
+      <div class="comingsoon project" id="programmingcontests">
+        <h3><a href="#">Programming Contests</a></h3>
+      </div>
+
+  </div><!-- \statuses -->
+
+  <div id="twitterstream">
+    <h2>@MSUMACM</h2>
+    <a class="twitter-timeline" href="https://twitter.com/MSUMACM" data-widget-id="397373253900980224">Tweets by @MSUMACM</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+
+  <div id="footernotes">
+    <p>We meet every Wedneday at Noon in the Linux Lab Bridges 163. Come join us!</p>
+    <p>This website is currently evolving through the week. It only keeps getting better.</p>
+    <h3>Officers</h3>
+    <p>Jeffrey McNertny</p>
+    <p>Justin Tuchek</p>
+    <p>Sarah Freeman</p>
+    <p>Jesse Deiters</p>
+    <p>Sri Kadimisetty</p>
+  </div>
+
+</div><!-- /container -->
 </body>
 </html>
