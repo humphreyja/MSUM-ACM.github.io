@@ -95,3 +95,24 @@ body {
         padding-top: 1em;
     }
 }
+
+#notices {
+    // display: block;
+    padding: 1em 0;
+    margin-top: 0;
+
+    text-align: center;
+    font-family: @ptsans-font-family;
+    font-size: 0.8em;
+    color: darken(@body-bg-color, 20%);
+
+
+    a {
+        color: inherit;
+        color: darken(@body-bg-color, 40%);
+
+        &:hover {
+            color: darken(@body-bg-color, 20%);
+        }
+    }
+}
