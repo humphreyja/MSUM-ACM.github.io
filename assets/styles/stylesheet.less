@@ -20,24 +20,24 @@
     border-radius: @radius;
 }
 
-// 
+// Set border box
 *, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-// Colors
-@import "colors.less";
+// Imports
+// @import "colors.less";
+// @import "mixins.less";
+// @import "fonts.less";
 
 // Fonts
-// @import "fonts.less";
-@body-main-font: "Bariol";
-
-// Mixins
-@import "mixins.less";
+@body-main-font: "Bariol", "Avenir Next", "Helvetica Neue", 
+                  Helvetica, Arial, "Lucida Grande", sans-serif;
 
 // Variables
+//  Colors
 @base-color: #BEFFF1; 
 @body-bg-color: @base-color;
 
@@ -52,6 +52,25 @@
 @appendix-color: #70A89B;
 
 @logo-text-color: #81DECA;
+
+// Billboard Background Colors
+@logo-bg-color: #AFFFEE;
+@workshop-bg-color: #9DEEDC;
+@github-bg-color: #A9FCEA;
+@projects-bg-color: #9EE1D2;
+@notices-bg-color: #A6F6E4;
+@tweets-bg-color: #A9FCEA;
+@media-bg-color: #A2EFDE;
+
+// Billboard Text Coloring
+@logo-color: #81DECA;
+@workshop-color: #FFFFFF;
+@github-color: #83C6B8;
+@projects-color: #FFFFFF;
+@notices-color: #83C6B8;
+@tweets-color: #83C6B8;
+@media-color: #FFFFFF;
+
 
 // Base
 body {
@@ -218,8 +237,15 @@ p {
 // Billboard & Navigation
 #billboard {
     opacity: 0.6;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+
     &:hover {
       opacity: 1.0;
+      -webkit-transition-property: opacity;
+      -webkit-transition-duration: 0.4s;
+      -webkit-transition-timing-function: ease;
     }
 }
 
@@ -236,11 +262,49 @@ p {
     
     position: relative;
 
+    &:hover {
+      #masthead {
+          opacity: 0;
+          visibility: hidden;
+
+          transition-property: opacity, visibility;
+          transition-duration: 0.4s, 0;
+          transition-delay: 0, 0.4s;
+          transition-timing-function: ease-in-out;
+      }
+    }
+
+
+    #masthead {
+        visibility: visible;
+        opacity: 1.0;
+        transition-property: opacity;
+        transition-duration: 0.4s;
+        transition-delay: 0;
+        transition-timing-function: ease-in-out;
+
+        position: absolute;
+
+        width: 192px;
+        height: 192px; 
+        top: 50%;    
+        left: 50%;  
+        margin-left: -96px;
+        margin-top: -96px;
+
+        border-radius: 50%;
+        
+        background-color: white;
+        z-index:9999;
+
+    }
+
     #billboard-logo, #workshop, #github, 
     #projects, #notices,
     #tweets, #media {
       position: absolute;
       height: 106px;
+      z-index: 10;
     }
 
     #billboard-logo {
@@ -293,37 +357,17 @@ p {
     #tweets     { top: 212px; left: 0; }
     #media      { top: 212px; left: 424px; }
 
-    // Background Colors
-    @logo-bg-color: #AFFFEE;
-    @workshop-bg-color: #9DEEDC;
-    @github-bg-color: #A9FCEA;
 
-    @projects-bg-color: #9EE1D2;
-    @notices-bg-color: #A6F6E4;
+    #billboard-logo { background-color: @logo-bg-color}
+    #workshop       { background-color: @workshop-bg-color}
+    #github         { background-color: @github-bg-color}
 
-    @tweets-bg-color: #A9FCEA;
-    @media-bg-color: #A2EFDE;
+    #projects       { background-color: @projects-bg-color}
+    #notices        { background-color: @notices-bg-color}
 
-    #billboard-logo       {background-color: @logo-bg-color}
-    #workshop   {background-color: @workshop-bg-color}
-    #github     {background-color: @github-bg-color}
+    #tweets         { background-color: @tweets-bg-color}
+    #media          { background-color: @media-bg-color}
 
-    #projects   {background-color: @projects-bg-color}
-    #notices    {background-color: @notices-bg-color}
-
-    #tweets     {background-color: @tweets-bg-color}
-    #media      {background-color: @media-bg-color}
-
-    // Text Coloring
-    @logo-color: #81DECA;
-    @workshop-color: #FFFFFF;
-    @github-color: #83C6B8;
-
-    @projects-color: #FFFFFF;
-    @notices-color: #83C6B8;
-
-    @tweets-color: #83C6B8;
-    @media-color: #FFFFFF;
 
     #billboard-logo       {color: @logo-color}
     #workshop   {h2, p {color: @workshop-color}}
@@ -334,6 +378,16 @@ p {
 
     #tweets     {h2, p {color: @tweets-color}}
     #media      {h2, p {color: @media-color}}
+
+    #billboard-logo:hover, #workshop:hover, #github:hover, 
+    #projects:hover, #notices:hover,
+    #tweets:hover, #media:hover {
+        background-color: lighten(@body-bg-color, 5%);
+        h1, h2, p {
+          color: @body-text-primary-color;
+        }
+    }
+
 }
 
 
@@ -347,8 +401,16 @@ p {
   }
 }
 
-.billboard-main-logo {
+.billboard-main-logo, .billboard-sub-projects {
+  a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
 }
+
 
 .billboard-sub-projects {
   h2 {
@@ -446,3 +508,4 @@ p {
         text-transform: uppercase;
     }
 }
+
