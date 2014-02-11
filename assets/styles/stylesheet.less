@@ -20,6 +20,13 @@
     border-radius: @radius;
 }
 
+// 
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 // Colors
 @import "colors.less";
 
@@ -51,7 +58,9 @@ body {
     font-family: @body-main-font;
     font-size: 18px;
 
-    width: 636px;
+    // Width
+    max-width: 636px;
+
     margin: 0 auto;
     padding: 80px 0;
 
@@ -208,8 +217,152 @@ p {
 
 // Billboard & Navigation
 #billboard {
+    opacity: 0.6;
+    &:hover {
+      opacity: 1.0;
+    }
+}
+
+#billboard, #navigation {
+    .border-radius(5px, 5px, 5px, 5px);
+    background: darken(@body-bg-color, 10%);
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+
+#billboard {
     width: 100%;
     height: 318px;
+    
+    position: relative;
+
+    #billboard-logo, #workshop, #github, 
+    #projects, #notices,
+    #tweets, #media {
+      position: absolute;
+      height: 106px;
+    }
+
+    #billboard-logo {
+      width: 106px;
+      background-color: red;
+        text-overflow: clip;
+        h1 {
+          display: block;
+            margin: 0;
+            padding: 0;
+            line-height: 0.6em;
+            font-size: 1.6em;
+        }
+
+        a {
+          display: block;
+            text-decoration: none;
+            color: @logo-text-color;
+
+            &:hover {
+              color: saturate(@logo-text-color, 30%);
+            }
+        }
+    }
+
+    #workshop, #notices, #media {
+      width: 212px;
+      background-color: yellow;
+    }
+
+    #github {
+      width: 318px;
+      background-color: pink;
+    }
+
+    #projects, #tweets {
+      width: 424px;
+      background-color: blue;
+
+    }
+
+    // Positioning
+    #billboard-logo       { top: 0; left: 0; }
+    #workshop   { top: 0; left: 106px; }
+    #github     { top: 0; left: 318px; }
+
+    #projects   { top: 106px; left: 0; }
+    #notices    { top: 106px; left: 424px; }
+
+    #tweets     { top: 212px; left: 0; }
+    #media      { top: 212px; left: 424px; }
+
+    // Background Colors
+    @logo-bg-color: #AFFFEE;
+    @workshop-bg-color: #9DEEDC;
+    @github-bg-color: #A9FCEA;
+
+    @projects-bg-color: #9EE1D2;
+    @notices-bg-color: #A6F6E4;
+
+    @tweets-bg-color: #A9FCEA;
+    @media-bg-color: #A2EFDE;
+
+    #billboard-logo       {background-color: @logo-bg-color}
+    #workshop   {background-color: @workshop-bg-color}
+    #github     {background-color: @github-bg-color}
+
+    #projects   {background-color: @projects-bg-color}
+    #notices    {background-color: @notices-bg-color}
+
+    #tweets     {background-color: @tweets-bg-color}
+    #media      {background-color: @media-bg-color}
+
+    // Text Coloring
+    @logo-color: #81DECA;
+    @workshop-color: #FFFFFF;
+    @github-color: #83C6B8;
+
+    @projects-color: #FFFFFF;
+    @notices-color: #83C6B8;
+
+    @tweets-color: #83C6B8;
+    @media-color: #FFFFFF;
+
+    #billboard-logo       {color: @logo-color}
+    #workshop   {h2, p {color: @workshop-color}}
+    #github     {h2, p {color: @github-color}}
+
+    #projects   {h2, p {color: @projects-color}}
+    #notices    {h2, p {color: @notices-color}}
+
+    #tweets     {h2, p {color: @tweets-color}}
+    #media      {h2, p {color: @media-color}}
+}
+
+
+.billboard-main-logo, .billboard-sub-projects {
+  padding: .777777778em;
+  text-overflow: ellipsis;
+
+  h1, h2, h3, p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.billboard-main-logo {
+}
+
+.billboard-sub-projects {
+  h2 {
+    padding-top: .388888889em;
+    line-height: 0.666666667em;
+    font-size: 0.666666667em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  p {
+    padding-top: .388888889em;
+    font-size: 1.166666667em;
+    line-height: 1em;
+  }
 }
 
 #navigation {
@@ -271,12 +424,6 @@ p {
             }
         }
     }
-}
-#billboard, #navigation {
-    .border-radius(5px, 5px, 5px, 5px);
-    background: darken(@body-bg-color, 10%);
-    margin-bottom: 80px;
-    overflow: hidden;
 }
 
 
