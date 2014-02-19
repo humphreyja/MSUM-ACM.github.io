@@ -3,6 +3,10 @@ layout: default
 title: "MSUM ACM"
 ---
 
+{% include billboard.html %}
+
+
+
 {% for post in site.posts %}
     <div class="article promo">
       <h1>{{ post.title }}</h1>
@@ -16,7 +20,6 @@ title: "MSUM ACM"
 
 
     </div><!-- /article -->
-    <div class="promo-read-button"> <a href="/">Read this article</a> </div><!-- /promo -->
+    <div class="promo-read-button"> <a href="{{ post.url }}">Read this article</a> </div><!-- /promo -->
 
 {% endfor %}
-

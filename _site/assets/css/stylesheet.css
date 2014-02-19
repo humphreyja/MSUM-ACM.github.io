@@ -68,6 +68,13 @@ p {
 .article {
   position: relative;
 }
+.article a {
+  text-decoration: none;
+  color: #1e2d2a;
+}
+.article a:hover {
+  color: #000000;
+}
 .article pre code {
   -webkit-border-top-right-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
@@ -201,6 +208,13 @@ p {
   margin-top: 0.5em;
   color: #70a89b;
   font-size: 1em;
+}
+#credits .credits-blob p a {
+  text-decoration: none;
+  color: inherit;
+}
+#credits .credits-blob p a:hover {
+  color: #578e81;
 }
 #appendix {
   font-size: 1em;
