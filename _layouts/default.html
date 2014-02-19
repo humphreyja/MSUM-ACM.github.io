@@ -1,44 +1,104 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MSUM ACM</title>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+  <meta name="description" content="MSUM ACM">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+  <!-- [normalize](http://necolas.github.io/normalize.css/) -->
+  <link rel="stylesheet" href="/assets/css/normalize.css">
 
-    </head>
-    <body>
+  <!-- [lesscss](http://lesscss.org) -->
+  <!-- <link rel="stylesheet/less" type="text/css" href="assets/styles/stylesheet.less"> -->
+  <!-- <script src="assets/js/less-1.6.2.js"></script> -->
+  <link rel="stylesheet" href="/assets/css/stylesheet.css">
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+</head>
+
+<body>
+  <div id="container">
+    <div id="billboard">
+
+      <div id="masthead">
+      </div><!-- /masthead -->
+      
+      <div id="billboard-logo" class="billboard-main-logo">
+        <h1><a href="/">msum acm</a></h1>
+      </div><!-- /billboard-logo -->
+      <div id="workshop" class="billboard-sub-projects">
+        <h2>Workshops</h2>
+        <p><a href="/">Virtualization &amp; Others</a></p>
+      </div><!-- /workshop -->
+      <div id="github" class="billboard-sub-projects">
+        <h2>This code is open sourced on</h2>
+        <p><a href="https://github.com/MSUM-ACM">github.com/msumacm</a></p>
+      </div><!-- /github -->
+
+      <div id="projects" class="billboard-sub-projects">
+        <h2>Projects</h2>
+        <p><a href="/">Programming Competitions &amp; Others</a></p>
+      </div><!-- /projects -->
+      <div id="notices" class="billboard-sub-projects">
+        <h2>Notices &amp; Meeting Notes</h2>
+        <p><a href="/">Wednesdays 2pm in BR 163</a></p>
+      </div><!-- /notices -->
+
+      <div id="tweets" class="billboard-sub-projects">
+        <h2>@MSUMACM</h2>
+        <p><a href="https://twitter.com/MSUMACM">We got our man pages now - http://msumacm.org/qna</a></p>
+      </div><!-- /tweets -->
+      <div id="media" class="billboard-sub-projects">
+        <!-- <h2>Photos &amp; Videos</h2> -->
+        <!-- <p><a href="/">Watch recent Photos &amp; Videos<a/></p> -->
+      </div><!-- /media -->
+
+    </div><!-- /billboard -->
+
+
+
+    {{ content }}
+
+
+
+    <div id="extras">
+      <div id="archive-link">
+        <a href="/">Visit the archive to read more posts</a>
+      </div><!-- /archive-link -->
+
+      <div id="credits">
+        <h2>Credits</h2>
+
+          <!--
+          <div class="credits-blob">
+            <h3>The Article's Author</h3>
+            <p>John AppleSeed</p>
           </div>
+          -->
+          <!-- /credits-blob -->
 
-          {{ content }}
+          <div class="credits-blob">
+            <h3>Project Editors &amp; Contact</h3>
+            <p>John AppleSeed</p>
+          </div><!-- /credits-blob -->
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+          <div class="credits-blob">
+            <h3>Design</h3>
+            <p>John AppleSeed</p>
+          </div><!-- /credits-blob -->
+      </div><!-- /credits -->
 
-    </body>
+      <div id="twitter-post">
+      </div><!-- /twitter-post -->
+    </div><!-- /extras -->
+
+    <div id="appendix">
+      <p>Subscribe to new articles via RSS</p>
+    </div><!-- /final-links -->
+  </div><!-- /container -->
+
+
+  <!-- Scripts -->
+
+</body>
 </html>
