@@ -1,4 +1,5 @@
 name: MSUM ACM
+description: The blog of MSUM's ACM chapter
 markdown: redcarpet
 pygments: true
 url :   http://msumacm.org
