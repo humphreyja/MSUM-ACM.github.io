@@ -29,7 +29,7 @@ It was surprising to me that fargo didn't have one of these. Fargo needs one. Th
 
 ### You should tell us a little bit about yourself
 
-I’m John Schneider. I graduated from NDSU in December 2012 with a degree in marketing and a minor in web design. I was doing an internship at Sundog and when I graduated, I got hired there full time. I’m still doing that full time. MELD workshop right now is an evening and weekend thing and I’m hoping to be able to hire someone in the near future so the space can be open during the day too and even have it open 24/7. For that to happen I need to make sure that I’ll be able to pay for all of that. There also needs to be demand from the members where it will make sense. There is no sense in hiring someone just have them here.
+I’m John Schneider. I graduated from NDSU in December 2012 with a degree in marketing and a minor in web design. I was doing an internship at [Sundog](http://www.sundoginteractive.com) and when I graduated, I got hired there full time. I’m still doing that full time. MELD workshop right now is an evening and weekend thing and I’m hoping to be able to hire someone in the near future so the space can be open during the day too and even have it open 24/7. For that to happen I need to make sure that I’ll be able to pay for all of that. There also needs to be demand from the members where it will make sense. There is no sense in hiring someone just have them here.
 
 
 ### I'm sure it takes a while to have people come in, spread the word out and get them excited, which is a big part of your job?
