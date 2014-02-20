@@ -145,7 +145,7 @@ p {
 }
 .article .article-image {
   background-color: #97f9e4;
-  width: 636px;
+  max-width: 100%;
   -webkit-border-top-right-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
