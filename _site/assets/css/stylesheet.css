@@ -85,7 +85,10 @@ p {
   color: #1e2d2a;
 }
 .article a:hover {
-  color: #000000;
+  color: #73a499;
+}
+.article a:active {
+  color: #507b71;
 }
 .article pre code {
   -webkit-border-top-right-radius: 5px;

@@ -160,7 +160,8 @@ p {
       text-decoration: none;
       color: darken(@body-text-primary-color, 30%);
 
-      &:hover { color: darken(@body-text-primary-color, 90%); }
+      &:hover { color: lighten(@body-text-primary-color, 10%); }
+      &:active { color: darken(@body-text-primary-color, 5%); }
     }
 
     pre {

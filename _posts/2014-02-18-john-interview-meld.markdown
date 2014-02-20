@@ -6,7 +6,7 @@ author: "Sri Kadimisetty, Senior &amp; Justin Tuchek, Senior"
 categories: interview
 ---
 
-_A makerspace is workspace where people with
+_A [makerspace](http://en.wikipedia.org/wiki/Hackerspace) is workspace where people with
 common interests, often in computers, technology,
 science, digital art or electronic art, can meet,
 socialise and/or collaborate. [MELD Workshop](http://meldworkshop.com) is a makerspace
@@ -84,7 +84,7 @@ The light saber is really cool and theres probably gonna be Star Wars playing in
 
 If you’re talking specifically about MELD, we just opened up. I haven’t seen too many problems coming through yet, however a recent example - one of the members is working on a rat trap racer which takes a rat trap, think of a mouse trap times 10, and uses it to power a racer, so its somehow tying the spring to the wheels and making them turn, its just got this whole design process going on. 
 
-Its kinds of cool if you look at makerspaces and 3D printing in general; one of the more famous examples is Square, the actual physical reader. The prototype for that was developed in a makerspace in California called Techshop. This was one of the earlier makerspaces. They were able to take this idea and turn it into a prototype. Before they went out and mass produced there, they were able to get the prototype for real. They probably even went through 7 or 8 iterations before they arrived at their final design. 
+Its kinds of cool if you look at makerspaces and 3D printing in general; one of the more famous examples is [Square](https://squareup.com), the actual physical reader. The prototype for that was developed in a makerspace in California called [Techshop](http://techshop.ws). This was one of the earlier makerspaces. They were able to take this idea and turn it into a prototype. Before they went out and mass produced there, they were able to get the prototype for real. They probably even went through 7 or 8 iterations before they arrived at their final design. 
 
 If you look at where all the different technologies in makerspaces are going, like 3D printing, they are going to change not just the manufacturing industry but also the fabric of our society. It might get to the point where a job now is not the same as a job 20 years down the line. It introduces a whole host of ethical problems too, for example, now everyones gonna start living longer.  How do you handle that? When the population doesn't turn over anymore, you just have this population that keeps getting added to and are 3D printed organs going to be available to everyone or is it gonna be just the people who can afford it. It introduces this whole healthcare side of things and how you determine who gets what.
 
