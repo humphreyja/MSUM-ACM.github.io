@@ -1,10 +1,17 @@
 ---
 layout: post
-title:  "An interview with John Schneider of Fargo's MELD Workshop"
+title:  "An interview with John Schneider, founder of Fargo's MELD Workshop"
 date:   2014-02-18 11:45:50
 author: "Sri Kadimisetty, Senior &amp; Justin Tuchek, Senior"
 categories: interview
 ---
+
+_A makerspace is workspace where people with
+common interests, often in computers, technology,
+science, digital art or electronic art, can meet,
+socialise and/or collaborate. [MELD Workshop](http://meldworkshop.com) is a makerspace
+in Fargo that allows members access to their
+cutting edge tools. materials and classes._
 
 
 ### What was your inspiration for starting MELD workshop?

@@ -3,4 +3,4 @@ description: The blog of MSUM's ACM chapter
 markdown: redcarpet
 pygments: true
 url :   http://msumacm.org
-permalink: pretty
+permalink: /:month-:day-:year/:title

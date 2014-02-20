@@ -7,8 +7,15 @@
 		<atom:link href="http://msumacm.org/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>An interview with John Schneider of Fargo's MELD Workshop</title>
-				<description>&lt;h3&gt;What was your inspiration for starting MELD workshop?&lt;/h3&gt;
+				<title>An interview with John Schneider, founder of Fargo's MELD Workshop</title>
+				<description>&lt;p&gt;&lt;em&gt;A makerspace is workspace where people with
+common interests, often in computers, technology,
+science, digital art or electronic art, can meet,
+socialise and/or collaborate. &lt;a href=&quot;http://meldworkshop.com&quot;&gt;MELD Workshop&lt;/a&gt; is a makerspace
+in Fargo that allows members access to their
+cutting edge tools. materials and classes.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3&gt;What was your inspiration for starting MELD workshop?&lt;/h3&gt;
 
 &lt;p&gt;I was wondering what the next big technology thing is and how I can get involved in it - 3D printing was something that kept coming up as a disruptive technology. In the late 70’s and the 80’s, it was personal computing, in the 2000’s you had the internet really starting to take off and now in the 2010s app development and that kind of stuff. 3D printing seemed like the next big thing so I started getting into it. I was looking at getting my own 3D printer but was having a hard time justifying buying one because if it was just me using it, I’d only be using 10% of the time. So what would it be doing the other 90%. It’s not doing anything. To get a decent 3D printer you were looking at $2000 or more and for one person to buy that didn&amp;#39;t make sense. I tried to figure out how I can share my 3D printer and from there it was - I setup a business where people can pay a membership fee for sharing a 3D printer doing custom 3D printing services on top of that. &lt;/p&gt;
 
@@ -83,8 +90,8 @@ and want to participate in creating things.&lt;/p&gt;
 &lt;p&gt;That&amp;#39;s the kind of stuff that excites me. Seeing people make things, seeing people come here and doing things. &lt;/p&gt;
 </description>
 				<pubDate>Tue, 18 Feb 2014 11:45:50 +0000</pubDate>
-				<link>http://msumacm.org/interview/2014/02/18/john-interview-meld/</link>
-				<guid isPermaLink="true">http://msumacm.org/interview/2014/02/18/john-interview-meld/</guid>
+				<link>http://msumacm.org/02-18-2014/john-interview-meld</link>
+				<guid isPermaLink="true">http://msumacm.org/02-18-2014/john-interview-meld</guid>
 			</item>
 		
 	</channel>
