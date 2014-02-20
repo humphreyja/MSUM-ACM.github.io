@@ -11,7 +11,7 @@
   background-image: -webkit-linear-gradient(bottom, #ffffff 0%, #ffffff 100%);
   background-image: -ms-linear-gradient(bottom, #ffffff 0%, #ffffff 100%);
   background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
-  opacity: 0.4;
+  opacity: 0.3;
 }
 *,
 *:before,
@@ -58,7 +58,7 @@ p {
   background-image: -webkit-linear-gradient(bottom, #ffffff 0%, #ffffff 100%);
   background-image: -ms-linear-gradient(bottom, #ffffff 0%, #ffffff 100%);
   background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
-  opacity: 0.4;
+  opacity: 0.3;
   height: 18em;
   opacity: 0.5%;
 }
@@ -75,7 +75,6 @@ p {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
-  border: 1px solid red;
 }
 .article {
   position: relative;
@@ -121,7 +120,7 @@ p {
 }
 .article .article-image {
   background-color: #97f9e4;
-  width: 100%;
+  width: 636px;
   -webkit-border-top-right-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -134,10 +133,12 @@ p {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
+  overflow: hidden;
 }
 .article img {
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 .article img:after {
   clear: both;
@@ -543,9 +544,19 @@ p {
 #navigation #page-title a:hover {
   background-color: #81deca;
 }
-.article-each h1 {
-  padding-bottom: 0;
-  margin-bottom: 0;
+.article-each {
+  padding-bottom: 2em;
+  border-bottom: 1px dashed #a9e9db;
+}
+.article-each h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+.article-each h1 a:hover {
+  color: #81deca;
+}
+.article-each h1 a:active {
+  color: #59d3b9;
 }
 .article-each p {
   padding: 0;
