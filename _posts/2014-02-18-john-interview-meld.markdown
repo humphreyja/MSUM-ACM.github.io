@@ -37,7 +37,12 @@ You’re gonna have engineers and mechanically inclined people coming in here. E
 
 You can also use this as a work space. If someone is in an apartment or a dorm or as another good example, a retiree who used to have a big house and a shop where they worked on their projects and now they're downsized. Maybe they're living in an apartment and don’t have a workspace anymore.  Now they can come here and spread their project. For example, on the main floor theres a 14 foot overhead rolling door  - you can pull a RV in here. If you want to put new speakers in your car and its 90 degrees outside and you don’t wanna sweat your ass of, you can bring your car into this air conditioned space and be doing something like that. 
 
+> They might not even know what they wanna make
+> but they just don’t wanna be a consumer anymore
+> and want to participate in creating things.
+
 Really its attractive to a lot of different niches. There’s a wide variety of people using the space and they all have the same driving goal where they wanna just make stuff.  They might not even know what they wanna make but they just don’t wanna be a consumer anymore and want to participate in creating things. 
+
 
 
 ### Thats very unique and very cool. You are actually bringing down a very large barrier to entry right now in place for a lot of markets to a lot of people who don’t have access to expensive or high cost tools
