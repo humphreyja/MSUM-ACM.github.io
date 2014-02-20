@@ -16,6 +16,18 @@
    // -o-mask-image: url(http://s21.postimg.org/gfep7h1h3/trans_Test.png);
    // -moz-mask-image: url(http://s21.postimg.org/gfep7h1h3/trans_Test.png);
    // mask-image: url(http://s21.postimg.org/gfep7h1h3/trans_Test.png);
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgb(255, 255, 255)),
+        color-stop(1, rgb(255, 255, 255))
+        );
+      background-image: -o-linear-gradient(bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+      background-image: -moz-linear-gradient(bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+      background-image: -webkit-linear-gradient(bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+      background-image: -ms-linear-gradient(bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+      background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
 
     // padding-bottom: 10%;
     opacity : 0.4;
