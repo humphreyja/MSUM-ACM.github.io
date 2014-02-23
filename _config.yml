@@ -1,6 +1,8 @@
 name: MSUM ACM
 description: The blog of MSUM's ACM chapter
-markdown: redcarpet
 pygments: true
 url :   http://msumacm.org
 permalink: /:month-:day-:year/:title
+markdown: rdiscount
+rdiscount:
+    extensions: [smart]
