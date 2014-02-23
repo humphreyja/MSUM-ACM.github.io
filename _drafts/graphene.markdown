@@ -11,14 +11,20 @@ _This article was adapted from an essay written by the author for his English
 
 
 Have you ever thought of computers being so fast that any program could be run
-in a split second and artificial intelligence, like in the Marvel movie series
-Iron Man, were possible? Right now it may just seem like a twinkle in the eye
-of an optimistic visionary, but it may just be more possible than one might
+in a split second and artificial intelligence (like in the Iron Man movie
+series) were possible? Right now it may just seem like a twinkle in the
+eye of an optimistic visionary, but it may just be more possible than one might
 think. With the isolation of graphene in 2004 at the University of Manchester,
 the dream of faster and smaller built computers may soon possible. But how
 will this new isolate of carbon drastically change computer processors and
 how much different is it compared to the past and present computer
 processors?
+
+<div class="article-image">
+<iframe width="636" height="358" src="//www.youtube.com/embed/-KPhqy7ZwHU" frameborder="0" allowfullscreen></iframe>
+</div><!-- /article-image -->
+<!-- <iframe width="560" height="315" src="//www.youtube.com/embed/-KPhqy7ZwHU" frameborder="0" allowfullscreen></iframe> -->
+<!-- <iframe src="//www.youtube.com/embed/-KPhqy7ZwHU" frameborder="0" allowfullscreen></iframe>-->
 
 The first obvious difference in computer processors from at least ten years ago
 is the size. A normally priced common processor in the year 2004 may have taken
@@ -34,7 +40,7 @@ Precious speed is lost in the carrying of data between one piece of technology
 and the other.
 
 The processors of today have come a long way since ten years ago. Today our
-processors have multiple cores ranging from two cores to six-teen cores. Cores
+processors have multiple cores ranging from two to sixteen cores. Cores
 are like separate processors working together and all integrated into one super
 processor. So two cores have two processors built in working in tandem. Also,
 computer processors have been miniaturized to be able to fit in phones and
@@ -64,6 +70,10 @@ ones. Although these micro processors run faster than the top of the line super
 computers ten years ago, it is still better to run a full sized one in your
 home computer.
 
+> When it was applied to computer processors, it
+> clocked at almost 420 GHz! That’s more than 10
+> times the fastest speed clocked today!
+
 The processors of tomorrow will be something spectacular. Scientists have been
 hard at work, constantly attempting to change and increase the speed of the
 future computers. These ideas range from using biological computers with
@@ -75,6 +85,13 @@ processors, it clocked at almost 420 GHz! That’s more than 10 times the fastes
 speed clocked today! Just think of the future of computers if they were all
 running this fast. No more waiting for your computer to start a hefty program
 or even to start up.
+
+<div class="article-image">
+    <img 
+    src="/assets/img/graphene-structure.jpg" 
+    alt="Graphene Structure" 
+    data-attribution="http://www.flickr.com/photos/core-materials/5057399792/" />
+</div>
 
 All this is made possible because of switching the transistor material. The
 current transistor material is made from silicon and is 32-nanometers big
@@ -95,27 +112,36 @@ which states that the number of transistors in a processor is affordably
 doubled every two years. Basically, as the number of transistors
 increases in a chip, the smaller the transistors have to be.
 
+> Within five years, it could begin powering faster
+> and better transistors, computer chips, and LCD
+> screens, according to researchers who are smitten
+> with this new supermaterial.
+
+
+
 The next big question is why is this not applied to modern electronics yet?
-This is because of any new inventions initial issue; finding cheep effective
+This is because of any new inventions initial issue; finding cheap effective
 ways to mass produce it. Graphene is not quite as simple to produce compared to
 making an iPhone or any modern computer technology because just about all of
 the modern computer technology that is produced today is still based on
-technology created a decade ago and is miniaturized. “The Manchester team that
+technology created a decade ago and is miniaturized. "The Manchester team that
 created the 1-nanometer graphene transistor first produced graphene in 2004 by
 repeatedly peeling away graphite strips with adhesive tape to isolate a single
-atomic plane.” - [Carmody](http://www.wired.com/gadgetlab/2010/10/graphene/#ixzz11XeXWfpL)
+atomic plane." - [Carmody](http://www.wired.com/gadgetlab/2010/10/graphene/#ixzz11XeXWfpL).
 To attempt to upscale this method would cause the
 production of graphene to be too expensive to use on a wide spectrum of
 electronics and it would still cost a fortune to buy those select few products.
-Nevertheless, Elizabeth Svoboda from Discover Magazine writes that “Within five
+Nevertheless, Elizabeth Svoboda from Discover Magazine writes that "Within five
 years, it could begin powering faster and better transistors, computer chips,
 and LCD screens, according to researchers who are smitten with this new
-supermaterial.”
+supermaterial."
 
 Much of the research that is being conducted today on graphene has been
 concentrated on finding effective methods of isolation. No one is really sure
 of its full capabilities and how long it will take to discover an effective
 process of isolation but there is no doubt that it will have a huge effect on
-the world in more ways that can be imagined. And as MIT chemical engineer
+the world in more ways that can be imagined. 
+<!-- And as MIT chemical engineer
 [Michael Strano told Discover magazine](http://discovermagazine.com/2010/jan-feb/07#.UwpndXm5hmY),
 “Graphene is an out-of-the-box material, so we shouldn’t try to hammer it into existing boxes.”
+-->
