@@ -8,9 +8,6 @@ minutes-to-read: 10
 categories: article
 ---
 
-_This article was adapted from an essay written by the author for his English
-101 class on October 3, 2013, and has been restructured to fit this format_
-
 
 Have you ever thought of computers being so fast that any program could be run
 in a split second and artificial intelligence (like in the Iron Man movie
