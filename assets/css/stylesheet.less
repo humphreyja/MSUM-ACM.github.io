@@ -664,10 +664,16 @@ p {
         text-transform: uppercase;
         font-size: 0.6em;
 
+        // Replace TEXT
+        &:before { content: "a " attr(data-minutes) " minute ";}
+        &:hover:before {content: "";}
+        &:hover:after {content: " this article";}
+
         &:hover {
             border: 1px solid @link-highlight-color;
             background-color: @link-highlight-color;
             color: @body-bg-color;
+
         }
 
         &:active {

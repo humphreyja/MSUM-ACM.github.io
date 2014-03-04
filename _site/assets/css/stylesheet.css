@@ -640,6 +640,15 @@ p {
   text-transform: uppercase;
   font-size: 0.6em;
 }
+.promo-read-button a:before {
+  content: "a " attr(data-minutes) " minute ";
+}
+.promo-read-button a:hover:before {
+  content: "";
+}
+.promo-read-button a:hover:after {
+  content: " this article";
+}
 .promo-read-button a:hover {
   border: 1px solid #81deca;
   background-color: #81deca;
