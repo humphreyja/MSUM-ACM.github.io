@@ -4,6 +4,7 @@ title:  "Effects of Graphene on the future of Computer Processing"
 title:  "Graphene and the future of Computer Processing"
 date:   2014-02-23 15:05:02
 author: "Jake Humphrey, Freshman"
+minutes-to-read: 10
 categories: article
 ---
 

@@ -3,7 +3,8 @@ layout: post
 title:  "An interview with John Schneider, founder of Fargo's MELD Workshop"
 date:   2014-02-18 11:45:50
 author: "Sri Kadimisetty, Senior &amp; Justin Tuchek, Senior"
-categories: interview
+minutes-to-read: 15
+categories: article
 ---
 
 _A [makerspace](http://en.wikipedia.org/wiki/Hackerspace) is workspace where people with
