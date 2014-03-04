@@ -1,0 +1,15 @@
+- name: Jeff McNertney
+  role: President
+  year: Junior
+  email: mcnertneje@mnstate.edu
+
+- name: Justin Tuchek
+  role: Vice President
+  year: Senior
+  email: tuchekju@mnstate.edu
+
+- name: Sri Kadimisetty
+  role: Web Meister
+  year: Senior
+  email: kadimisesr@mnstate.edu
+

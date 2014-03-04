@@ -608,6 +608,7 @@ p {
 
 // Archive
 #article-list {
+  padding-bottom: 6em;
 }
 .article-each {
     padding-bottom: 2em;
@@ -665,9 +666,12 @@ p {
         font-size: 0.6em;
 
         // Replace TEXT
-        &:before { content: "a " attr(data-minutes) " minute ";}
-        &:hover:before {content: "";}
-        &:hover:after {content: " this article";}
+        &:before { 
+          content: "a " attr(data-minutes) " minute "; }
+        &:hover:before {
+          content: "";}
+        &:hover:after {
+          content: " this article";}
 
         &:hover {
             border: 1px solid @link-highlight-color;
