@@ -171,20 +171,19 @@ p {
 .article img:after {
   clear: both;
 }
-#extras {
+.extras {
   margin-top: 4em;
-  border-bottom: 1px dashed #81deca;
   border-top: 1px dashed #81deca;
   position: relative;
 }
-#extras #archive-link {
+.extras #archive-link {
   position: absolute;
   text-align: center;
   top: -1.5em;
   left: 0;
   right: 0;
 }
-#extras #archive-link a {
+.extras #archive-link a {
   display: block;
   margin: 0 auto;
   width: 30em;
@@ -208,12 +207,12 @@ p {
   text-transform: uppercase;
   font-size: 0.6em;
 }
-#extras #archive-link a:hover {
+.extras #archive-link a:hover {
   border: none;
   background-color: #81deca;
   color: #befff1;
 }
-#extras #archive-link a:active {
+.extras #archive-link a:active {
   border: none;
   background-color: #34c5a6;
   color: #befff1;
@@ -650,4 +649,34 @@ p {
   border: none;
   background-color: #34c5a6;
   color: #befff1;
+}
+#participate {
+  margin-top: 6em;
+  margin-bottom: 3em;
+  width: 100%;
+  min-height: 365px;
+  padding: 3em 1em;
+  position: relative;
+  background-color: none;
+  background-image: url("/assets/img/participation.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#participate #participation-content {
+  width: 70%;
+  height: 80%;
+  overflow: hidden;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#participate h2 {
+  text-align: center;
+  color: #91d5c6;
+}
+#participate p {
+  color: #70a89b;
 }

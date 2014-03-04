@@ -8,10 +8,12 @@
   <!-- [normalize](http://necolas.github.io/normalize.css/) -->
   <link rel="stylesheet" href="/assets/css/normalize.css">
 
+  <!-- Fonts -->
+  <link rel="stylesheet" href="/assets/fonts/bariol-family-stylesheet.css">
+
   <!-- [lesscss](http://lesscss.org) -->
   <!-- <link rel="stylesheet/less" type="text/css" href="assets/styles/stylesheet.less"> -->
   <!-- <script src="assets/js/less-1.6.2.js"></script> -->
-  <link rel="stylesheet" href="/assets/fonts/bariol-family-stylesheet.css">
   <link rel="stylesheet" href="/assets/css/stylesheet.css">
 
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
@@ -20,52 +22,26 @@
 <body>
   <div id="container">
 
-
-
-
     {{ content }}
 
 
-
-    <div id="extras">
-      <div id="archive-link">
-        <a href="/archives/">Visit the archive to read more articles</a>
+    <div class="extras">
+      <div id="archive-link"> <a href="/archives/">Visit the archive to read more articles</a>
       </div><!-- /archive-link -->
+      {% include participation.html %}
+    </div><!-- /extras -->
 
-      <div id="credits">
-        <h2>Credits</h2>
 
-          <!--
-          <div class="credits-blob">
-            <h3>The Article's Author</h3>
-            <p>John AppleSeed</p>
-          </div>
-          -->
-          <!-- /credits-blob -->
-
-          <div class="credits-blob">
-            <h3>Blog Editors &amp; Contact</h3>
-            <p>
-            <a href="mailto:kadimisesr@mnstate.edu?Subject=Hello!">Sri Kadimisetty</a> <br />
-              <a href="mailto:tuchekju@mnstate.edu?Subject=Hello!">Justin Tuchek</a>
-            </p>
-
-          </div><!-- /credits-blob -->
-
-          <div class="credits-blob">
-            <h3>Design</h3>
-            <p><a href="https://github.com/kadimisetty/">Sri Kadimisetty</a></p>
-          </div><!-- /credits-blob -->
-      </div><!-- /credits -->
-
-      <div id="twitter-post">
-      </div><!-- /twitter-post -->
+    <div class="extras">
+      {% include credits.html %}
     </div><!-- /extras -->
 
     <div id="appendix">
       <p><a href="/feed.xml">Subscribe to new articles via RSS</a></p>
-    </div><!-- /final-links -->
+    </div><!-- /appendix -->
+
   </div><!-- /container -->
+
 
 
   <!-- Scripts -->

@@ -226,9 +226,9 @@ p {
 
 
 // Footer
-#extras {
+.extras {
     margin-top: 4em;
-    border-bottom: 1px dashed @link-highlight-color;
+    // border-bottom: 1px dashed @link-highlight-color;
     border-top: 1px dashed @link-highlight-color;
     position: relative;
  
@@ -676,4 +676,47 @@ p {
             color: @body-bg-color;
         }
     }
+}
+
+
+
+#participate {
+  margin-top: 6em;
+  margin-bottom: 3em;
+  // Dimensions of picture
+
+
+  width: 100%;
+  min-height: 365px;
+  padding: 3em 1em;
+
+  position: relative;
+
+  // margin-top: 6em;
+  // margin-bottom: 3em;
+
+  background-color: none;
+  background-image: url("/assets/img/participation.png"); 
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  #participation-content {
+      // Horizontal Centering
+      width: 70%;
+      height: 80%;
+      overflow: hidden;
+      margin: auto;
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+  }
+
+  h2 {
+    text-align: center;
+    color: @body-text-subtext-color;
+  }
+  p {
+    color: @credits-text-color;
+  }
+
+
 }
