@@ -14,5 +14,5 @@ to run into in their career. We use it here to
 run our website and do other cool stuff. You will
 learn how to manage your projects better with Git
 be introduced to the popular code sharing website
-github.com. Participants also get a cool token of
-appreciation.
+github.com. Participants also get a tiny surprise
+gift.
