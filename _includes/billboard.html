@@ -6,10 +6,14 @@
   <div id="billboard-logo" class="billboard-main-logo">
     <h1><a href="/">msum acm</a></h1>
   </div><!-- /billboard-logo -->
+
   <div id="workshop" class="billboard-sub-projects">
-    <h2>Workshops</h2>
-    <p><a href="https://github.com/MSUM-ACM/events">Git Set Go! &amp; Others</a></p>
+    <h2>Workshops &amp; Other Events</h2>
+    {% for event in site.categories.events limit:1 %}
+      <p><a href="{{ site.url }}/events">{{ event.title }}</a></p>
+    {% endfor %}
   </div><!-- /workshop -->
+
   <div id="github" class="billboard-sub-projects">
     <h2>This code is open sourced on</h2>
     <p><a href="https://github.com/MSUM-ACM">github.com/msumacm</a></p>
@@ -19,6 +23,7 @@
     <h2>Projects</h2>
     <p><a href="https://github.com/MSUM-ACM">Programming Competitions &amp; Others</a></p>
   </div><!-- /projects -->
+
   <div id="notices" class="billboard-sub-projects">
     <h2>Notices &amp; Meeting Updates</h2>
     <p><a href="/mailinglist">Wednesdays 2pm in BR 163</a></p>
