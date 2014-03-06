@@ -610,7 +610,7 @@ p {
 #article-list {
   padding-bottom: 6em;
 }
-.article-each {
+.article-each, .event-each {
     padding-bottom: 2em;
     border-bottom: 1px dashed lighten(@link-highlight-color, 10%);
     h1 {
@@ -730,9 +730,9 @@ p {
 }
 
 
-.footer-events-blob  {
-  width: 70%;
+.footer-events-blob {
   margin: 0 auto;
+  width: 70%;
   margin-top: 1.5em;
 
   h3.footer-event-date {margin-top: 0.6em;}
@@ -767,5 +767,19 @@ p {
       margin-top: 0;
       padding-top: 0;
     }
+  }
+}
+
+.event-page-description {
+  text-align: left;
+  margin-top: 0.9em;
+
+  p {
+    text-transform: none;
+    // color: darken(@body-text-subtext-color, 5%);
+    color: @body-text-primary-color;
+    font-size: 0.9em;
+    margin-top: 0;
+    padding-top: 0;
   }
 }

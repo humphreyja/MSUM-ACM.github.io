@@ -592,21 +592,26 @@ p {
 #article-list {
   padding-bottom: 6em;
 }
-.article-each {
+.article-each,
+.event-each {
   padding-bottom: 2em;
   border-bottom: 1px dashed #a9e9db;
 }
-.article-each h1 a {
+.article-each h1 a,
+.event-each h1 a {
   color: inherit;
   text-decoration: none;
 }
-.article-each h1 a:hover {
+.article-each h1 a:hover,
+.event-each h1 a:hover {
   color: #81deca;
 }
-.article-each h1 a:active {
+.article-each h1 a:active,
+.event-each h1 a:active {
   color: #59d3b9;
 }
-.article-each p {
+.article-each p,
+.event-each p {
   padding: 0;
   margin: 0;
   font-size: 0.6em;
@@ -699,8 +704,8 @@ p {
   color: #70a89b;
 }
 .footer-events-blob {
-  width: 70%;
   margin: 0 auto;
+  width: 70%;
   margin-top: 1.5em;
 }
 .footer-events-blob h3.footer-event-date {
@@ -733,6 +738,17 @@ p {
 }
 .footer-events-blob .footer-event-description p {
   color: #7fcebc;
+  font-size: 0.9em;
+  margin-top: 0;
+  padding-top: 0;
+}
+.event-page-description {
+  text-align: left;
+  margin-top: 0.9em;
+}
+.event-page-description p {
+  text-transform: none;
+  color: #5a8a7f;
   font-size: 0.9em;
   margin-top: 0;
   padding-top: 0;

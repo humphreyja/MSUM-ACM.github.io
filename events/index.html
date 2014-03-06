@@ -3,18 +3,21 @@ layout: default
 title: archives
 ---
 
-{% include navigation.html param='<a href="/">blog </a> / <a href="/archives">archives</a>' %}
+{% include navigation.html param='<a href="/events">workshops &amp; events</a>' %}
 
 <div id="article-list">
 
-  {% for event in site.categories.events %}
-  <div class="event-each">
+{% for event in site.categories.events %}
+  <div class="article-each">
     <h1>{{ event.title }}</h1>
     <div id="meta">
+      <p id="meta-secondary">{{ event.event-date | date: "%-d %B at %-I:%M %p" }}</p>
       <p id="meta-primary">{{ event.author }}</p>
-      <p id="meta-secondary">{{ event.date | date_to_string }}</p>
     </div><!-- /meta -->
-  </div><!-- /event-each -->
-  {% endfor %}
+      <div class="event-page-description">
+        {{ event.content }}
+      </div><!-- /footer-event-description -->
+  </div><!-- /article-each -->
+{% endfor %}
 
 </div><!-- /article-list -->
