@@ -1,0 +1,20 @@
+---
+layout: default
+title: archives
+---
+
+{% include navigation.html param='<a href="/">blog </a> / <a href="/archives">archives</a>' %}
+
+<div id="article-list">
+
+  {% for event in site.categories.events %}
+  <div class="event-each">
+    <h1>{{ event.title }}</h1>
+    <div id="meta">
+      <p id="meta-primary">{{ event.author }}</p>
+      <p id="meta-secondary">{{ event.date | date_to_string }}</p>
+    </div><!-- /meta -->
+  </div><!-- /event-each -->
+  {% endfor %}
+
+</div><!-- /article-list -->

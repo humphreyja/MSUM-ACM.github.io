@@ -232,7 +232,7 @@ p {
     border-top: 1px dashed @link-highlight-color;
     position: relative;
  
-    #archive-link {
+    .archive-link {
         position: absolute;
         text-align: center;
         top: -1.5em;
@@ -270,7 +270,7 @@ p {
     }
 }
 
-#credits {
+#credits, #footer-events {
     text-align: center;
     margin-top: 4em;
     margin-bottom: 4em;
@@ -286,7 +286,7 @@ p {
         padding-right: 3em;
         border-bottom: 1px dashed @body-text-subtext-color;
     }
-    .credits-blob {
+    .credits-blob,{
         h3 {
             color: @body-text-subtext-color;
             margin-top: 4em;
@@ -727,6 +727,45 @@ p {
   p {
     color: @credits-text-color;
   }
+}
 
 
+.footer-events-blob  {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1.5em;
+
+  h3.footer-event-date {margin-top: 0.6em;}
+  h3.footer-event-author {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0.1em; }
+
+  h3.footer-event-date, h3.footer-event-author {
+            color: @body-text-subtext-color;
+            text-transform: uppercase;
+            font-size: 0.6em;
+
+            padding-bottom: 0;
+            margin-bottom: 0; }
+
+  .footer-event-title {
+    color: darken(@body-text-subtext-color, 5%);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0.3em;
+    font-size: 1em;
+  }
+
+  .footer-event-description {
+    margin-top: 0em;
+    padding-top: 0;
+    p {
+      color: darken(@body-text-subtext-color, 5%);
+      font-size: 0.9em;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
 }

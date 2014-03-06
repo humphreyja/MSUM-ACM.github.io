@@ -176,14 +176,14 @@ p {
   border-top: 1px dashed #81deca;
   position: relative;
 }
-.extras #archive-link {
+.extras .archive-link {
   position: absolute;
   text-align: center;
   top: -1.5em;
   left: 0;
   right: 0;
 }
-.extras #archive-link a {
+.extras .archive-link a {
   display: block;
   margin: 0 auto;
   width: 30em;
@@ -207,23 +207,25 @@ p {
   text-transform: uppercase;
   font-size: 0.6em;
 }
-.extras #archive-link a:hover {
+.extras .archive-link a:hover {
   border: none;
   background-color: #81deca;
   color: #befff1;
 }
-.extras #archive-link a:active {
+.extras .archive-link a:active {
   border: none;
   background-color: #34c5a6;
   color: #befff1;
 }
-#credits {
+#credits,
+#footer-events {
   text-align: center;
   margin-top: 4em;
   margin-bottom: 4em;
   color: #91d5c6;
 }
-#credits h2 {
+#credits h2,
+#footer-events h2 {
   color: #91d5c6;
   text-transform: uppercase;
   font-size: 0.6em;
@@ -233,7 +235,8 @@ p {
   padding-right: 3em;
   border-bottom: 1px dashed #91d5c6;
 }
-#credits .credits-blob h3 {
+#credits .credits-blob h3,
+#footer-events .credits-blob h3 {
   color: #91d5c6;
   margin-top: 4em;
   text-transform: uppercase;
@@ -242,18 +245,21 @@ p {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-#credits .credits-blob p {
+#credits .credits-blob p,
+#footer-events .credits-blob p {
   margin: 0;
   padding: 0;
   margin-top: 0.5em;
   color: #70a89b;
   font-size: 1em;
 }
-#credits .credits-blob p a {
+#credits .credits-blob p a,
+#footer-events .credits-blob p a {
   text-decoration: none;
   color: inherit;
 }
-#credits .credits-blob p a:hover {
+#credits .credits-blob p a:hover,
+#footer-events .credits-blob p a:hover {
   color: #578e81;
 }
 #appendix {
@@ -691,4 +697,43 @@ p {
 }
 #participate p {
   color: #70a89b;
+}
+.footer-events-blob {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1.5em;
+}
+.footer-events-blob h3.footer-event-date {
+  margin-top: 0.6em;
+}
+.footer-events-blob h3.footer-event-author {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0.1em;
+}
+.footer-events-blob h3.footer-event-date,
+.footer-events-blob h3.footer-event-author {
+  color: #91d5c6;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.footer-events-blob .footer-event-title {
+  color: #7fcebc;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0.3em;
+  font-size: 1em;
+}
+.footer-events-blob .footer-event-description {
+  margin-top: 0em;
+  padding-top: 0;
+}
+.footer-events-blob .footer-event-description p {
+  color: #7fcebc;
+  font-size: 0.9em;
+  margin-top: 0;
+  padding-top: 0;
 }
