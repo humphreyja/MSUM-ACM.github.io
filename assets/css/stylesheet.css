@@ -708,10 +708,10 @@ p {
   width: 70%;
   margin-top: 1.5em;
 }
-.footer-events-blob h3.footer-event-date {
+.footer-events-blob h3.footer-event-author {
   margin-top: 0.6em;
 }
-.footer-events-blob h3.footer-event-author {
+.footer-events-blob h3.footer-event-date {
   padding-bottom: 0;
   margin-bottom: 0;
   margin-top: 0.1em;
