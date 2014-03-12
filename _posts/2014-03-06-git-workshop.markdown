@@ -16,4 +16,4 @@ to run our website and do other cool stuff. You
 will learn how to manage your projects better with
 Git and be introduced to the popular code sharing
 website github.com. Participants also get a tiny
-surprise gift.
+surprise gift. [The slides are now available.](https://speakerdeck.com/sri/git-set-go)
