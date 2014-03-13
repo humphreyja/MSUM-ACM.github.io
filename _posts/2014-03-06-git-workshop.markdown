@@ -6,6 +6,7 @@ event-date: 2014-03-11 17:00:00
 author: "Sri Kadimisetty, Senior"
 location: BR 165/166
 duration-in-minutes: 13
+presentation-data: https://speakerdeck.com/sri/git-set-go
 categories: events
 ---
 
@@ -16,4 +17,4 @@ to run our website and do other cool stuff. You
 will learn how to manage your projects better with
 Git and be introduced to the popular code sharing
 website github.com. Participants also get a tiny
-surprise gift. [The slides are now available.](https://speakerdeck.com/sri/git-set-go)
+surprise gift. 

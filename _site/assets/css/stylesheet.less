@@ -232,6 +232,14 @@ p {
     border-top: 1px dashed @link-highlight-color;
     position: relative;
  
+    a {
+      text-decoration: none;
+      color: darken(@credits-text-color, 10%);
+      border-bottom: 1px solid @credits-text-color;
+
+      &:hover { 
+        color: darken(@credits-text-color, 60%);}
+    }
     .archive-link {
         position: absolute;
         text-align: center;
@@ -756,6 +764,26 @@ p {
     padding-bottom: 0;
     padding-top: 0.3em;
     font-size: 1em;
+  }
+  .footer-presentation-data {
+   
+   a {
+      padding : 0.6em;
+      font-size: 12px;
+      text-transform: uppercase;
+      .border-radius(5px, 5px, 5px, 5px);
+
+      text-decoration: none;
+      color: @body-text-subtext-color;
+      border: 1px solid @body-text-subtext-color;
+
+      &:hover {
+        color: @body-bg-color;
+        background-color: @body-text-subtext-color; }
+      &:active {
+        background-color: lighten(@body-text-subtext-color, 5%); }
+        border: 1px solid lighten(@body-text-subtext-color, 5%);
+    }
   }
 
   .footer-event-description {
