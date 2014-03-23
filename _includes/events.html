@@ -9,7 +9,7 @@
       <h3 class="footer-event-date">{{ event.event-date | date: "%-d %B at %-I:%M %p" }} in {{ event.location }}</h3>
 
       {% if event.presentation-data %}
-        <h3 class="footer-presentation-data"><a href="{{ event.presentation-data }}">Read Accompanying Slides</a></h3>
+        <h3 class="footer-presentation-data"><a href="{{ event.presentation-data }}">Read Accompanying Material</a></h3>
       {% endif %}
 
       <div class="footer-event-description"><p>{{ event.content }}
