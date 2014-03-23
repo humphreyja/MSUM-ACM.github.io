@@ -20,5 +20,5 @@ high-definition video. Many MSUM students have
 Raspberry Pi’s and use them for a variety of
 projects. In this workshop you will be introduced
 to a Raspberry Pi, learn about it's many features
-& capabilities and get pointers on how to start
+& capabilities and get pointers on starting
 your own project with one.
