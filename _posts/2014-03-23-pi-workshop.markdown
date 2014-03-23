@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Raspberry Pi Workshop"
+title:  "Raspberry Pi"
 date:   2014-03-23 01:20:10
 event-date: 2014-03-25 17:00:00
 author: "Jeff Mcnertney, Junior"
