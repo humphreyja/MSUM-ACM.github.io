@@ -5,7 +5,7 @@ date:   2014-03-06 01:20:10
 event-date: 2014-03-11 17:00:00
 author: "Sri Kadimisetty, Senior"
 location: BR 165/166
-duration-in-minutes: 13
+duration-in-minutes: 60
 presentation-data: https://speakerdeck.com/sri/git-set-go
 categories: events
 ---
