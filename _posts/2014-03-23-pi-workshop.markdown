@@ -10,11 +10,15 @@ presentation-data:
 categories: events
 ---
 
-The _Raspberry Pi_ is a credit-card sized computer that plugs into your TV and a
-keyboard. It is a capable little computer which can be used in electronics
-projects (setting up a webserver), and for many of the things that your desktop
-PC does, like spreadsheets, word-processing and games. It also plays
-high-definition video. There are currently two models, Model A and Model B.
-Many MSUM students have Raspberry Pi’s and use them for a variety of things.
-This workshop you will be able to see what a Raspberry Pi is, how you can
-purchase one, and the possibilities of a Raspberry Pi.
+The _Raspberry Pi_ is a capable little credit-card
+sized computer that plugs into your TV and
+a keyboard. It can be used for electronics
+projects, setting up webservers and even for
+regular desktop computer tasks like spreadsheets,
+word-processing or games. It can even play
+high-definition video. Many MSUM students have
+Raspberry Pi’s and use them for a variety of
+projects. In this workshop you will be introduced
+to a Raspberry Pi, learn about it's many features
+& capabilities and get pointers on how to start
+your own project with one.
