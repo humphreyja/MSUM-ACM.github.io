@@ -811,4 +811,30 @@ p {
     margin-top: 0;
     padding-top: 0;
   }
+
+}
+
+.event-page-presentation-data {
+    margin-top: 1em;
+
+      a {
+          padding : 0.6em;
+          font-size: 11px;
+          font-weight: 400;
+          text-transform: uppercase;
+          .border-radius(5px, 5px, 5px, 5px);
+
+          @event-page-description-link-color: saturate(lighten(@body-text-primary-color, 10%), 20%);
+
+          text-decoration: none;
+          color: @event-page-description-link-color;
+          border: 1px solid @event-page-description-link-color;
+
+          &:hover {
+              color: @body-bg-color;
+              background-color: @event-page-description-link-color; }
+          &:active {
+              background-color: lighten(@event-page-description-link-color, 5%); }
+          border: 1px solid lighten(@event-page-description-link-color, 5%);
+        }
 }
