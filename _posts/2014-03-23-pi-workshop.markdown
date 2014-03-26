@@ -6,7 +6,7 @@ event-date: 2014-03-25 17:00:00
 author: "Jeff Mcnertney, Junior"
 location: BR 165/166
 duration-in-minutes: 60
-presentation-data: 
+presentation-data: https://github.com/MSUM-ACM/Raspberry-Pi-Workshop
 categories: events
 ---
 
