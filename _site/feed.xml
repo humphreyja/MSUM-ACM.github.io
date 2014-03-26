@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>MSUM ACM</title>
-		<description>The blog of MSUM's ACM chapter</description>
+		<description>The blog of MSUM&#39;s ACM chapter</description>
 		<link>http://msumacm.org</link>
 		<atom:link href="http://msumacm.org/feed.xml" rel="self" type="application/rss+xml" />
 		
@@ -159,7 +159,7 @@ the world in more ways that can be imagined.&lt;/p&gt;
 			</item>
 		
 			<item>
-				<title>An interview with John Schneider, founder of Fargo's MELD Workshop</title>
+				<title>An interview with John Schneider, founder of Fargo&#39;s MELD Workshop</title>
 				<description>&lt;p&gt;&lt;em&gt;A &lt;a href=&quot;http://en.wikipedia.org/wiki/Hackerspace&quot;&gt;makerspace&lt;/a&gt; is workspace where people with
 common interests, often in computers, technology,
 science, digital art or electronic art, can meet,
