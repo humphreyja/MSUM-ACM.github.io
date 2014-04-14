@@ -3,7 +3,7 @@ layout: post
 title:  "Mobile App Development"
 date:   2014-04-14 02:42:00
 event-date: 2014-04-15 17:00:00
-author: "Sri Kadimisetty, Senior, Muhammad Saho, Senior & Jeff McNertney"
+author: "Sri Kadimisetty, Muhammad Saho & Jeff McNertney"
 location: BR 165/166
 duration-in-minutes: 60
 presentation-data: 
