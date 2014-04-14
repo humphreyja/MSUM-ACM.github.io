@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mobile App Development"
+title:  "Arduino"
 date:   2014-04-14 02:42:00
 event-date: 2014-04-08 17:00:00
 author: "MSUM ACM"
