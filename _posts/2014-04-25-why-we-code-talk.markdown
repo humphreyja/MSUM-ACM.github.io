@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Why We Code"
-date:   2014-03-06 01:20:10
-event-date: 2014-03-11 17:00:00
+date:   2014-04-25 18:10:10
+event-date: 2014-04-29 16:30:00
 author: "Alex Brandt, Alumni"
 location: BR 165/166
 duration-in-minutes: 60
