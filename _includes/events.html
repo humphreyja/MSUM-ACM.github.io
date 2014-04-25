@@ -6,7 +6,7 @@
       <h3 class="footer-event-title">{{ event.title }}</h3>
 
       <h3 class="footer-event-author">{{ event.author }}</h3>
-      <h3 class="footer-event-date">{{ event.event-date | date: "%-d %B at %-I:%M %p" }} in {{ event.location }}</h3>
+      <!-- <h3 class="footer-event-date">{{ event.event-date | date: "%-d %B at %-I:%M %p" }} in {{ event.location }}</h3> -->
 
       {% if event.presentation-data %}
         <h3 class="footer-presentation-data"><a href="{{ event.presentation-data }}">Read Accompanying Material</a></h3>
