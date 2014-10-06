@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linux and the Raspberry Pi"
+title:  "Virtualization"
 date:   2014-09-30 17:10:10
 event-date: 2014-09-30 17:00:00
 author: "Jeff McNertney"
