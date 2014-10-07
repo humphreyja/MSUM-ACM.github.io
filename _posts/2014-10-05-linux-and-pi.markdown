@@ -6,7 +6,7 @@ event-date: 2014-10-07 17:00:00
 author: "Dmitrii Mudrechenko, Jeff McNertney"
 location: BR 165
 duration-in-minutes: 60
-presentation-data: 
+presentation-data: https://github.com/MSUM-ACM/EventNotes
 categories: events
 ---
 
