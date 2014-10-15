@@ -10,10 +10,18 @@
     <!-- /credits-blob -->
 
     <div class="credits-blob">
+
       <h3>Blog Editors &amp; Contact</h3>
       <p>
-      <a href="{{ site.url }}/officers">Sri Kadimisetty</a> <br />
-      <a href="{{ site.url }}/officers">Justin Tuchek</a>
+      {% for editor in site.data.blogeditors %}
+        <a href="mailto:{{ editor.email }}" 
+          title="Mail to {{ editor.name }}">{{ editor.name }}</a>
+
+        {% unless forloop.last %}
+          <br />
+        {% endunless %}
+
+      {% endfor %}
       </p>
 
     </div><!-- /credits-blob -->
