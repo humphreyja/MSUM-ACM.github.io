@@ -6,7 +6,7 @@ event-date: 2014-11-04 17:00:00
 author: "Jake Humphrey"
 location: BR 165/166
 duration-in-minutes: 60
-presentation-data: https://speakerdeck.com/sri/git-set-go
+presentation-data: https://speakerdeck.com/humphreyja/source-control-presentation
 categories: events
 ---
 
@@ -17,6 +17,7 @@ and learn of the benefits of using it. We will
 be working primarily with Git, an open-source
 distributed version control system that is used
 widely by software professionals in their career.
-Git also has its own website github.com that
-allows you to share your programs all around the
-world. We even use github.com to host our website!
+Git also serves as the platform of the popular
+service github.com that allows you to share
+your programs all around the world. We even use
+github.com to host our website!
