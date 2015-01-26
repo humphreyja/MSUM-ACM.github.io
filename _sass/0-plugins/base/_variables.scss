@@ -71,8 +71,8 @@ $form-font-family: $base-font-family;
 // MSUMACM COLORS
 
 $teal: #B0E4D7;
-$teal: #352E27;
-$teal:#AD0000;
+//$teal: #352E27;
+//$teal:#AD0000;
 $teal-1: #afffee;
 $teal-2: #a9fcea;
 $teal-3: #a6f6e4;
@@ -85,25 +85,25 @@ $base-background-color: $teal;
 $dark:#5a8a7f;
 
 $dark:shade($base-background-color,45%);
-$dark:#fff;
+//$dark:#fff;
 $font-color:shade($dark,5%);
 // MSUMACM BUTTONS
 
-$base-button-color: #000;
+$base-button-color: $base-background-color;
 $base-button-text-color: $font-color;
 $base-button-border: 1px solid $base-button-text-color;
-$base-button-border:none;
+//$base-button-border:none;
 $hover-button-color: $base-button-text-color;
-$hover-button-text-color: #000;
+$hover-button-text-color: $base-background-color;
 $hover-button-border:1px solid $base-button-text-color;
-$hover-button-border:none;
+//$hover-button-border:none;
 $active-button-color: tint($base-button-text-color,12%);
 $active-button-text-color: $teal;
 $active-button-border: 1px solid $base-button-text-color;
-$active-button-border:none;
+//$active-button-border:none;
 
-
-$header-size:160px;
+//#D3FFF7
+$header-size:0px;
 
 // Background Color
 
@@ -113,6 +113,8 @@ $button-size:30em;
 $hover-link-color:shade($dark,25%);
 $active-link-color:tint($dark,12%);
 $other:#699087;
+
+$image-opacity:.9;
 //logo panel
 
 $base-panel-color-1:$dark;
