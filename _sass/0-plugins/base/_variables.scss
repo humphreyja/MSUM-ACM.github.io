@@ -66,41 +66,22 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color
 $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
 
-
-
 // MSUMACM COLORS
+$base: #B0E4D7;
+$background:#A7F0DB;
+$dark:shade($base,45%);
+$font-color:shade($dark,25%);
 
-$teal: #B0E4D7;
-//$teal: #352E27;
-//$teal:#AD0000;
-$teal-1: #afffee;
-$teal-2: #a9fcea;
-$teal-3: #a6f6e4;
-$teal-4: #9deedc;
-$teal-5: #a2efde;
-$teal-6: #9ee1d2;
-$teal-7: #34c5a6;
-$teal-8: #81deca;
-$base-background-color: $teal;
-$dark:#5a8a7f;
-
-$dark:shade($base-background-color,45%);
-//$dark:#fff;
-$font-color:shade($dark,5%);
 // MSUMACM BUTTONS
-
-$base-button-color: $base-background-color;
+$base-button-color: $background;
 $base-button-text-color: $font-color;
 $base-button-border: 1px solid $base-button-text-color;
-//$base-button-border:none;
 $hover-button-color: $base-button-text-color;
-$hover-button-text-color: $base-background-color;
+$hover-button-text-color: $background;
 $hover-button-border:1px solid $base-button-text-color;
-//$hover-button-border:none;
 $active-button-color: tint($base-button-text-color,12%);
-$active-button-text-color: $teal;
+$active-button-text-color: $background;
 $active-button-border: 1px solid $base-button-text-color;
-//$active-button-border:none;
 
 //#D3FFF7
 $header-size:0px;
@@ -118,22 +99,9 @@ $image-opacity:.9;
 //logo panel
 
 $base-panel-color-1:$dark;
-$base-panel-text-color-1:$base-background-color;
-$hover-panel-color-1:tint($base-background-color,50%);
-$hover-panel-text-color-1:$font-color;
-/*
-$base-panel-color-2:shade($base-background-color,25%);
-$base-panel-text-h-color-2:$font-color;
-$base-panel-text-p-color-2:$base-background-color;
-$hover-panel-color-2:tint($base-background-color,50%);
-$hover-panel-text-color-2:$font-color;
-
-$base-panel-color-1:$dark;
-$base-panel-text-color-1:$base-background-color;
-$hover-panel-color-1:tint($base-background-color,50%);
+$base-panel-text-color-1:$base;
+$hover-panel-color-1:tint($base,50%);
 $hover-panel-text-color-1:$font-color;
 
-$base-panel-color-1:$dark;
-$base-panel-text-color-1:$base-background-color;
-$hover-panel-color-1:tint($base-background-color,50%);
-$hover-panel-text-color-1:$font-color;*/
+$blockquote-background-color: shade($base,5%);
+$blockquote-text-color: shade($font-color,50%);
