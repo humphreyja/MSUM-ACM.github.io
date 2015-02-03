@@ -19,7 +19,7 @@ title: events
   {% assign pmonth = event.event-date | date: "%d" | plus:pmonth %}
   {% assign pmonth = event.event-date | date: "%Y" | minus:2013 | times:365 | plus:pmonth %}
   {% assign datediff = smonth | minus:pmonth %}
-  {% if datediff < 0 and datediff > -7 and currwork != 0 %}
+  {% if datediff <= 0 and datediff > -7 and currwork != 0 %}
   <div class="article-separator"><h2>Current Workshop</h2></div>
   {% assign currwork = 0 %}
   <div class="article-each article-event article-current">
