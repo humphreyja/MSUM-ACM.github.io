@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(normalize.css);
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -28,7 +27,7 @@ input[type="submit"] {
   text-decoration: none; }
   button:hover,
   input[type="submit"]:hover {
-    background-color: #485d58;
+    background-color: #3a5750;
     color: white; }
   button:disabled,
   input[type="submit"]:disabled {
@@ -82,9 +81,9 @@ a {
   color: white;
   text-decoration: none; }
   a:hover {
-    color: #485d58; }
+    color: #3a5750; }
   a:active, a:focus {
-    color: #485d58;
+    color: #3a5750;
     outline: none; }
 
 hr {
@@ -232,6 +231,360 @@ input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
 .make-element-fade-like-gradient {
   overflow: hidden;
   padding: 1em;
@@ -267,7 +620,7 @@ body {
   margin: 0 auto;
   padding: 80px 0;
   background: #A7F0DB;
-  color: #485d58; }
+  color: #3a5750; }
 
 h1 {
   font-size: 2em;
@@ -278,7 +631,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #485d58; }
+  color: #3a5750; }
 
 h3 {
   margin-top: 1em;
@@ -287,7 +640,7 @@ h3 {
 p {
   font-size: 1em;
   line-height: 1.5em;
-  color: #485d58; }
+  color: #3a5750; }
 
 .promo {
   overflow: hidden;
@@ -295,16 +648,16 @@ p {
   background: -webkit-linear-gradient(top, rgba(250, 250, 250, 0.5), rgba(250, 250, 250, 0.3));
   -webkit-border-radius: 10px;
   -webkit-mask-image: -webkit-gradient(linear, left 30%, left bottom, from(#000000), to(transparent));
-  background-image: -webkit-linear-gradient( top , #c3eae1 0%, #e7f6f3 100%);
-  background-image: linear-gradient(to bottom, #c3eae1 0%, #e7f6f3 100%);
+  background-image: -webkit-linear-gradient( top , #99dcc9 0%, #A7F0DB 100%);
+  background-image: linear-gradient(to bottom, #99dcc9 0%, #A7F0DB 100%);
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
-  opacity: 0.5;
+  opacity: 0.8;
   height: 18em; }
   .promo h1 {
-    color: #485d58; }
+    color: #3a5750; }
   .promo p {
-    color: #485d58; }
+    color: #3a5750; }
 
 .first-article {
   margin-top: 4em; }
@@ -317,14 +670,14 @@ p {
 
 .article a {
   text-decoration: none;
-  color: #485d58;
+  color: #3a5750;
   font-weight: bold; }
 
 .article a:hover {
-  color: #a3aeab; }
+  color: #9caba7; }
 
 .article a:active {
-  color: #3d4f4a; }
+  color: #314944; }
 
 .article pre code {
   border-radius: 5px;
@@ -355,13 +708,13 @@ p {
   text-align: center;
   border-radius: 5px;
   padding: 1em;
-  background-color: #a7d8cc;
+  background-color: #86c8b9;
   font-size: 1.2em;
   line-height: 1.6em;
   font-weight: 100;
   font-style: italic; }
   .article blockquote p {
-    color: #242e2c; }
+    color: #1d2b28; }
 
 .article .article-image {
   background-color: #97f9e4;
@@ -379,7 +732,7 @@ p {
 
 .extras, .current-workshop, .info {
   margin-top: 4em;
-  border-top: 1px dashed #485d58;
+  border-top: 1px dashed #3a5750;
   position: relative; }
   .extras a, .current-workshop a, .info a {
     text-decoration: none;
@@ -400,9 +753,9 @@ p {
       background-color: #A7F0DB;
       text-decoration: none;
       padding: 2em;
-      border: 1px solid #485d58;
+      border: 1px solid #3a5750;
       border-radius: 5px;
-      color: #485d58;
+      color: #3a5750;
       text-transform: uppercase;
       font-size: 0.6em; }
     @media (min-width: 900px) and (min-height: 1300px) {
@@ -411,11 +764,11 @@ p {
         font-size: 1em; } }
     .extras .archive-link a:hover, .current-workshop .archive-link a:hover, .info .archive-link a:hover {
       border: none;
-      background-color: #485d58;
+      background-color: #3a5750;
       color: #A7F0DB; }
     .extras .archive-link a:active, .current-workshop .archive-link a:active, .info .archive-link a:active {
       border: none;
-      background-color: #5d706c;
+      background-color: #516b65;
       color: #A7F0DB; }
 
 .current-workshop, .info {
@@ -431,14 +784,14 @@ p {
   #credits h2,
   #footer-events h2,
   .cw-event h2, .info-event h2 {
-    color: #485d58;
+    color: #3a5750;
     text-transform: uppercase;
     font-size: 0.6em;
     display: inline;
     padding-bottom: 0.5em;
     padding-left: 3em;
     padding-right: 3em;
-    border-bottom: 1px dashed #485d58; }
+    border-bottom: 1px dashed #3a5750; }
   #credits .credits-blob h3,
   #footer-events .credits-blob h3,
   .cw-event .credits-blob h3, .info-event .credits-blob h3 {
@@ -463,11 +816,11 @@ p {
   #credits .credits-blob p a:hover,
   #footer-events .credits-blob p a:hover,
   .cw-event .credits-blob p a:hover, .info-event .credits-blob p a:hover {
-    color: #485d58; }
+    color: #3a5750; }
   #credits .credits-blob p a:active,
   #footer-events .credits-blob p a:active,
   .cw-event .credits-blob p a:active, .info-event .credits-blob p a:active {
-    color: #738c86; }
+    color: #63847c; }
 
 #appendix {
   font-size: 1em;
@@ -475,7 +828,7 @@ p {
   text-align: center; }
 
 #appendix a {
-  color: #637571;
+  color: #57706a;
   text-decoration: none; }
 
 #billboard {
@@ -497,7 +850,7 @@ p {
 #billboard,
 #navigation {
   border-radius: 5px;
-  background: #607d76;
+  background: #4e746b;
   margin-bottom: 80px;
   overflow: hidden; }
 
@@ -609,37 +962,37 @@ p {
   left: 424px; }
 
 #billboard #billboard-logo {
-  background-color: #607d76; }
+  background-color: #4e746b; }
   #billboard #billboard-logo a {
     display: block;
     text-decoration: none;
-    color: #B0E4D7; }
+    color: #c6e9e1; }
 
 #billboard #billboard-logo:hover {
-  background-color: #d7f1eb; }
+  background-color: #c6e9e1; }
   #billboard #billboard-logo:hover a {
-    color: #485d58; }
+    color: #3a5750; }
 
 #billboard #workshop {
-  background-color: #a7d8cc; }
+  background-color: #86c8b9; }
 
 #billboard #github {
-  background-color: #bfe9df; }
+  background-color: #a4dbcf; }
 
 #billboard #notices {
-  background-color: #9ecdc1; }
+  background-color: #7fbdaf; }
 
 #billboard #meetings {
-  background-color: #c7ece3; }
+  background-color: #afe0d5; }
 
 #billboard #tweets {
-  background-color: #c3eae1; }
+  background-color: #aaded2; }
 
 #billboard #media {
-  background-color: #99c6bb; }
+  background-color: #7bb7a9; }
 
 #billboard #billboard-logo h1 {
-  color: #A7F0DB; }
+  color: #c6e9e1; }
 
 #billboard #workshop h2,
 #billboard #workshop p {
@@ -647,7 +1000,7 @@ p {
 
 #billboard #github h2,
 #billboard #github p {
-  color: #758581; }
+  color: #6b817b; }
 
 #billboard #notices h2,
 #billboard #notices p {
@@ -658,11 +1011,11 @@ p {
 
 #billboard #meetings h2,
 #billboard #meetings p {
-  color: #758581; }
+  color: #6b817b; }
 
 #billboard #tweets h2,
 #billboard #tweets p {
-  color: #758581; }
+  color: #6b817b; }
 
 #billboard #media h2,
 #billboard #media p {
@@ -674,7 +1027,7 @@ p {
 #billboard #notices:hover,
 #billboard #tweets:hover,
 #billboard #media:hover {
-  background-color: #d7f1eb; }
+  background-color: #c6e9e1; }
 
 #billboard #billboard-logo:hover h1,
 #billboard #workshop:hover h1,
@@ -697,7 +1050,7 @@ p {
 #billboard #notices:hover p,
 #billboard #tweets:hover p,
 #billboard #media:hover p {
-  color: #485d58; }
+  color: #3a5750; }
 
 .billboard-main-logo,
 .billboard-sub-projects {
@@ -755,18 +1108,18 @@ p {
 #navigation #logo a {
   display: block;
   text-decoration: none;
-  color: #B0E4D7;
+  color: #c6e9e1;
   height: 100%;
   padding-left: .6em;
   padding-top: .6em; }
 
 #navigation #logo:hover {
-  background: #d7f1eb; }
+  background: #c6e9e1; }
   #navigation #logo:hover a {
-    color: #485d58; }
+    color: #3a5750; }
 
 #navigation #page-title {
-  background-color: #9ecdc1;
+  background-color: #7fbdaf;
   height: 100%;
   width: 530px;
   display: block;
@@ -795,19 +1148,19 @@ p {
   #rss-events a {
     padding: .6em;
     padding-left: 0;
-    color: #758581; }
+    color: #6b817b; }
 
 #article-list {
   text-align: center; }
 
 .article-separator {
-  border-bottom: 1px dashed #485d58; }
+  border-bottom: 1px dashed #3a5750; }
 
 .article-each,
 .event-each {
   padding-bottom: 2em;
   padding-top: 2em;
-  border-top: 1px dashed #485d58; }
+  border-top: 1px dashed #3a5750; }
 
 .article-each {
   margin-left: 2em;
@@ -826,11 +1179,11 @@ p {
 
 .article-each h1 a:hover,
 .event-each h1 a:hover {
-  color: #758581; }
+  color: #6b817b; }
 
 .article-each h1 a:active,
 .event-each h1 a:active {
-  color: #516560; }
+  color: #435f58; }
 
 .article-each p,
 .event-each p {
@@ -857,9 +1210,9 @@ p {
   background-color: #A7F0DB;
   text-decoration: none;
   padding: 2em;
-  border: 1px solid #485d58;
+  border: 1px solid #3a5750;
   border-radius: 5px;
-  color: #485d58;
+  color: #3a5750;
   text-transform: uppercase;
   font-size: 0.6em; }
 
@@ -873,13 +1226,13 @@ p {
   content: " this article"; }
 
 .promo-read-button a:hover {
-  border: 1px solid #485d58;
-  background-color: #485d58;
+  border: 1px solid #3a5750;
+  background-color: #3a5750;
   color: #A7F0DB; }
 
 .promo-read-button a:active {
   border: none;
-  background-color: #5d706c;
+  background-color: #516b65;
   color: #A7F0DB; }
 
 #participate {
@@ -917,10 +1270,10 @@ p {
 
 #participate h2 {
   text-align: center;
-  color: #485d58; }
+  color: #3a5750; }
 
 #participate p {
-  color: #485d58; }
+  color: #3a5750; }
 
 .info-blob {
   margin: 0 auto;
@@ -931,7 +1284,7 @@ p {
     margin-bottom: 0;
     margin-top: 0.1em; }
   .info-blob .info-title {
-    color: #485d58;
+    color: #3a5750;
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -943,7 +1296,7 @@ p {
     margin-top: 0.1em; }
   .info-blob h3.info-date,
   .info-blob h3.info-location {
-    color: #485d58;
+    color: #3a5750;
     text-transform: uppercase;
     font-size: 0.6em;
     padding-bottom: 0;
@@ -952,7 +1305,7 @@ p {
     margin-top: 0.75em;
     padding-top: 0; }
     .info-blob .info-description p {
-      color: #485d58;
+      color: #3a5750;
       font-size: 0.9em;
       margin-top: 0;
       padding-top: 0; }
@@ -974,13 +1327,13 @@ p {
   .cw-event-blob h3.cw-event-date,
   .cw-event-blob h3.cw-event-author,
   .cw-event-blob h3.cw-event-location {
-    color: #485d58;
+    color: #3a5750;
     text-transform: uppercase;
     font-size: 0.6em;
     padding-bottom: 0;
     margin-bottom: 0; }
   .cw-event-blob .cw-event-title {
-    color: #485d58;
+    color: #3a5750;
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -993,19 +1346,19 @@ p {
     text-transform: uppercase;
     border-radius: 5px;
     text-decoration: none;
-    color: #485d58;
-    border: 1px solid #485d58;
+    color: #3a5750;
+    border: 1px solid #3a5750;
     background-color: #A7F0DB; }
   .cw-event-blob .cw-presentation-data a:hover {
     color: #A7F0DB;
-    background-color: #485d58; }
+    background-color: #3a5750; }
   .cw-event-blob .cw-presentation-data a:active {
-    background-color: #5d706c; }
+    background-color: #516b65; }
   .cw-event-blob .cw-event-description {
     margin-top: 0em;
     padding-top: 0; }
     .cw-event-blob .cw-event-description p {
-      color: #485d58;
+      color: #3a5750;
       font-size: 0.9em;
       margin-top: 0;
       padding-top: 0; }
@@ -1027,14 +1380,14 @@ p {
 .footer-events-blob h3.footer-event-date,
 .footer-events-blob h3.footer-event-author,
 .footer-events-blob h3.footer-event-location {
-  color: #485d58;
+  color: #3a5750;
   text-transform: uppercase;
   font-size: 0.6em;
   padding-bottom: 0;
   margin-bottom: 0; }
 
 .footer-events-blob .footer-event-title {
-  color: #485d58;
+  color: #3a5750;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1048,23 +1401,23 @@ p {
   text-transform: uppercase;
   border-radius: 5px;
   text-decoration: none;
-  color: #485d58;
-  border: 1px solid #485d58;
+  color: #3a5750;
+  border: 1px solid #3a5750;
   background-color: #A7F0DB; }
 
 .footer-events-blob .footer-presentation-data a:hover {
   color: #A7F0DB;
-  background-color: #485d58; }
+  background-color: #3a5750; }
 
 .footer-events-blob .footer-presentation-data a:active {
-  background-color: #5d706c; }
+  background-color: #516b65; }
 
 .footer-events-blob .footer-event-description {
   margin-top: 0em;
   padding-top: 0; }
 
 .footer-events-blob .footer-event-description p {
-  color: #485d58;
+  color: #3a5750;
   font-size: 0.9em;
   margin-top: 0;
   padding-top: 0; }
@@ -1074,7 +1427,7 @@ p {
 
 .event-page-description p {
   text-transform: none;
-  color: #485d58;
+  color: #3a5750;
   font-size: 0.9em;
   margin-top: 0;
   padding-top: 0; }
@@ -1089,16 +1442,16 @@ p {
   text-transform: uppercase;
   border-radius: 5px;
   text-decoration: none;
-  color: #485d58;
-  border: 1px solid #485d58; }
+  color: #3a5750;
+  border: 1px solid #3a5750; }
 
 .event-page-presentation-data a:hover {
   color: #A7F0DB;
-  background-color: #485d58;
-  border: 1px solid #485d58; }
+  background-color: #3a5750;
+  border: 1px solid #3a5750; }
 
 .event-page-presentation-data a:active {
-  background-color: #5d706c; }
+  background-color: #516b65; }
 
 #main-header {
   background-color: #000;

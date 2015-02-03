@@ -70,12 +70,12 @@ p {
   background: -webkit-linear-gradient(top, rgba(250, 250, 250, 0.5), rgba(250, 250, 250, 0.3));
   -webkit-border-radius: 10px;
   -webkit-mask-image: -webkit-gradient(linear, left 30%, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
-  @include background-image(linear-gradient(to bottom, tint($base,25%) 0%, tint($base, 70%) 100%));
+  @include background-image(linear-gradient(to bottom, shade($background,8%) 0%, $background 100%));
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
-  opacity: 0.5;
+  opacity: 0.8;
   height: 18em;
-
+//#A9FCE9
   h1{
   	color:$font-color;
   }
@@ -398,7 +398,7 @@ p {
   	a{
   		display: block;
   		text-decoration: none;
-  		color:$base-panel-text-color-1;
+  		color:$hover-panel-color-1;
   	}
   	
 }
@@ -428,7 +428,7 @@ p {
   background-color: shade($base,13%);
 }
 #billboard #billboard-logo h1 {
-  color: $background;
+  color: $hover-panel-color-1;
 }
 #billboard #workshop h2,
 #billboard #workshop p {
@@ -545,7 +545,7 @@ p {
 #navigation #logo a {
   display: block;
   text-decoration: none;
-  color: $base-panel-text-color-1;
+  color: $hover-panel-color-1;
   height:100%;
   padding-left: .6em;
   padding-top: .6em;
