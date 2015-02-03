@@ -4,5 +4,6 @@ pygments: true
 url :   http://msumacm.org
 permalink: /:month-:day-:year/:title
 markdown: rdiscount
+timezone: America/Chicago
 rdiscount:
     extensions: [smart]
