@@ -66,7 +66,7 @@ title: events
   {% assign pmonth = event.event-date | date: "%d" | plus:pmonth %}
   {% assign pmonth = event.event-date | date: "%Y" | minus:2013 | times:365 | plus:pmonth %}
   {% assign datediff = smonth | minus:pmonth %}
-  {% if datediff < -7 %}
+  {% if datediff <= -7 %}
   {% if separator != 0 %}
   <div class="article-separator"><h2>Upcoming Workshops</h2></div>
   {% assign separator = 0 %}
