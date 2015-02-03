@@ -4,43 +4,103 @@
   </div><!-- /masthead -->
   
   <div id="billboard-logo" class="billboard-main-logo">
-    <h1><a href="/">msum acm</a></h1>
+    <a href="/">
+    <h1>msum acm</h1>
+    </a>
   </div><!-- /billboard-logo -->
 
-  <div id="workshop" class="billboard-sub-projects">
+  <div id="workshop" class="billboard-sub-projects"><!--pulls the workshop for this week-->
+    <a href="/events">
     <h2>Workshops &amp; Events</h2>
-    {% for event in site.categories.events limit:1 %}
-      <p><a href="{{ site.url }}/events">{{ event.title }}</a></p>
+    {% assign count = 0 %}
+    {% for event in site.categories.events %}
+    {% assign smonth = site.time | date: "%m" | times:30 %}
+      {% assign pmonth = event.event-date | date: "%m" | times:30 %}
+      {% assign smonth = site.time | date: "%d" | plus:smonth %}
+      {% assign smonth = site.time | date: "%Y" | minus:2013 | times:365 | plus:smonth %}
+      {% assign pmonth = event.event-date | date: "%d" | plus:pmonth %}
+      {% assign pmonth = event.event-date | date: "%Y" | minus:2013 | times:365 | plus:pmonth %}
+      {% assign datediff = smonth | minus:pmonth %}
+      {% if datediff < 0 and datediff > -7 %}
+      <p>{{ event.title }}</p>
+      {% assign count = 1 %}
+      {% break %}
+      {% endif %}
     {% endfor %}
+    {% if count == 0 %}
+    <p>No Workshop This Week</p>
+    {% endif %}
+    </a>
   </div><!-- /workshop -->
 
   <div id="github" class="billboard-sub-projects">
+    <a href="https://github.com/MSUM-ACM/MSUM-ACM.github.io">   
     <h2>This code is open sourced on</h2>
-    <p><a href="https://github.com/MSUM-ACM/MSUM-ACM.github.io">github.com/MSUM-ACM &hellip;</a></p>
+    <p>github.com/MSUM-ACM &hellip;</p>
+    </a>
   </div><!-- /github -->
 
-  <div id="projects" class="billboard-sub-projects">
-    <h2>Join Us and Stay Tuned</h2>
-    <p><a href="/mailinglist">Subscribe to our Mailing List</a></p>
-  </div><!-- /projects -->
-
   <div id="notices" class="billboard-sub-projects">
-    <h2>Projects</h2>
-    <p><a href="https://github.com/MSUM-ACM">Programming Competitions &amp; Others</a></p>
+    <a href="/mailinglist">
+    <h2>Notices &amp; Meeting Updates</h2>
+    {% for info in site.categories.info %}
+      {% assign smonth = site.time | date: "%m" | times:30 %}
+      {% assign pmonth = info.date | date: "%m" | times:30 %}
+      {% assign smonth = site.time | date: "%d" | plus:smonth %}
+      {% assign smonth = site.time | date: "%Y" | minus:2013 | times:365 | plus:smonth %}
+      {% assign pmonth = info.date | date: "%d" | plus:pmonth %}
+      {% assign pmonth = info.date | date: "%Y" | minus:2013 | times:365 | plus:pmonth %}
+      {% assign datediff = smonth | minus:pmonth %}
+      {% if datediff < 0 and datediff > -30 %}
+        <p>{{ info.title }}</p>
+        {% if info.date %}<p class="date">{% assign h = info.date | date: "%-H" | plus:6 %}
+          {% if h >= 12 %} {% assign TOD = "pm" %} {% else %} {% assign TOD = "am" %}{% endif %}
+          {% assign hofm = h | modulo:12 %}
+          {% if hofm == 0 %}{% assign dmod = 13 %}{% else %}{% assign dmod = 12 %}{% endif %}
+            {{ info.date | date_to_string }} at {{ h | modulo:dmod }}:{{ info.date | date: "%M" }} {{ TOD }}</p>{% endif %}
+        {% assign isinfo = 1 %}
+        {% break %}
+      {% endif %}
+      {% endfor %}
+      {% if isinfo != 1 %}
+        <p>Currently No Reminders</p>
+      {% endif %}
+      </a>
   </div><!-- /notices -->
 
-  <div id="tweets" class="billboard-sub-projects"> <h2>@MSUMACM</h2>
-    <!-- <p><a href="https://twitter.com/MSUMACM"></a></p> -->
-    <p><a href="https://twitter.com/MSUMACM"> 
-    Join us tomorrow for an introductory talk on Linux and meet and play with some 
-    &hellip;
-    </a></p> </div><!-- /tweets -->
+  <div id="meetings" class="billboard-sub-projects">
+    <h2>Weekly Meeting</h2>
+      {% for MInfo in site.data.meetinginfo %}
+        <p><a href="/mailinglist">{{ MInfo.day }} {{ MInfo.time }} in {{ MInfo.location }}</a></p>
+      {% break %}
+    {% endfor %}
+  </div><!-- /meetings -->
 
+  <div id="tweets" class="billboard-sub-projects"> 
+    <a href="https://twitter.com/MSUMACM">
+    <h2>@MSUMACM</h2>
+    <p id="last-tweet"> 
+    <!--Generated from javascript Twitter fetcher-->
+    </p> 
+    </a>
+    </div><!-- /tweets -->
   <div id="media" class="billboard-sub-projects">
+    <a href="/officers">
     <h2>Meet the Team</h2>
-    <p><a href="/officers">Officers</a></p>
-    <!-- <h2>Photos &amp; Videos</h2> -->
-    <!-- <p><a href="/">Watch recent Photos &amp; Videos<a/></p> -->
+    <p>Officers</p>
+    </a>
   </div><!-- /media -->
 
 </div><!-- /billboard -->
+
+<!--Javascript to call the twitter fetcher application.  It pulls content from the MSUMACM account via a widget that is created on the account and pasting the id into the array below -->
+<script type="text/javascript" src="/assets/js/twitter/js/twitterFetcher_min.js"></script>
+<script type="text/javascript">
+var twitter1 = {
+  "id": '397373253900980224',
+  "domId": 'last-tweet',
+  "maxTweets": 1,
+  "enableLinks": true
+};
+twitterFetcher.fetch(twitter1);
+</script>

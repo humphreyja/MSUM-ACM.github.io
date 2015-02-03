@@ -1,13 +1,17 @@
 ---
 layout: default
-title: archives
+title: officers
 ---
 
 {% include navigation.html param='<a href="/officers">officers</a>' %}
 
 <div id="article-list">
-
-  <h1>Spring 2014</h1>
+{% assign mon = site.time | date: "%m" | plus:0 %}
+{% if mon <= 5 %}{% assign sem = "Spring" %}
+{% elsif mon > 5 and mon < 7 %}{% assign sem = "Summer" %}
+{% else %}{% assign sem = "Fall" %}
+{% endif %}
+  <h1>{{ sem }} {{ site.time | date: "%Y" }}</h1>
   {% for officer in site.data.officers %}
   <div class="article-each">
     <h2>{{ officer.name }}</h2>
