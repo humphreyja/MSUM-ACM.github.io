@@ -648,8 +648,8 @@ p {
   background: -webkit-linear-gradient(top, rgba(250, 250, 250, 0.5), rgba(250, 250, 250, 0.3));
   -webkit-border-radius: 10px;
   -webkit-mask-image: -webkit-gradient(linear, left 30%, left bottom, from(#000000), to(transparent));
-  background-image: -webkit-linear-gradient( top , #99dcc9 0%, #A7F0DB 100%);
-  background-image: linear-gradient(to bottom, #99dcc9 0%, #A7F0DB 100%);
+  background-image: -webkit-linear-gradient( top , #9ee4d0 0%, #A7F0DB 100%);
+  background-image: linear-gradient(to bottom, #9ee4d0 0%, #A7F0DB 100%);
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.8;
@@ -1512,3 +1512,9 @@ p {
   display: none; }
 #last-tweet .interact {
   display: none; }
+
+.workshop-divider {
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 0;
+  margin: 0; }

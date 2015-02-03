@@ -20,11 +20,11 @@
       {% if page.title != 'events' %}
       
         <div class="extras">
-        {% if page.title != 'archives' and page.title != 'officers' and page.title != 'Sign up for the mailing list' %}
+        {% if page.article %}
           <div class="archive-link"> <a href="/archives/">Visit the archive to read all articles</a>
           </div><!-- /archive-link -->
           {% endif %}
-          {% include events.html param=0%}
+          {% include events.html param=0 %}
         </div><!-- /extras -->
 
       {% endif %}

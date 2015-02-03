@@ -5,14 +5,28 @@ layout: default
 
 {% include navigation.html param='<a href="/">blog</a>' %}
 
-<div class="article">
+<div id="article-list" class="article">
 
   <h1>{{ page.title }}</h1>
-
+{% if page.categories == 'events' %}
+check
+{% endif %}
 
   <div id="meta">
     <p id="meta-primary">{{ page.author }}</p>
-    <p id="meta-secondary">{{ page.date | date_to_string }}</p>
+    <p id="meta-secondary">{% if page.event-date %}{% assign h = page.event-date | date: "%-H" | plus:6 %}
+        {% if h > 12 %} {% assign TOD = "pm" %} {% else %} {% assign TOD = "am" %}{% endif %}
+          {{ page.event-date | date_to_string }} at {{ h | modulo:12 }}:{{ page.event-date | date: "%M" }} {{ TOD }}{% else %}{{ page.date | date_to_string }}{% endif %} </p>
+  	{% if page.location %}
+        <p class="meta-location">
+        {{ page.location }}
+        </p>
+        {% endif %}
+        {% if page.presentation-data %}
+      <div class="meta-presentation-data">
+        <p><a href="{{ page.presentation-data }}">Read Accompanying Material</a></p>
+      </div><!-- /event-page-presentation-data -->
+      {% endif %}
   </div><!-- /meta -->
 
   <div class="article-content">

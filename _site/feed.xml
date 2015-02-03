@@ -1,249 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>MSUM ACM Blog</title>
-		<description>The blog of MSUM&#39;s ACM chapter</description>
+		<title>MSUM ACM Events</title>
+		<description>Event listing of MSUM's ACM Chapter</description>
 		<link>http://msumacm.org</link>
-		<atom:link href="http://msumacm.org/feed.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="http://msumacm.org/events/feed.xml" rel="self" type="application/rss+xml" />
 		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+			
+			
+			
 			<item>
-				<title>Graphene and the future of Computer Processing</title>
-				<description>&lt;p&gt;Have you ever thought of computers being so fast that any program could be run
-in a split second and artificial intelligence (like in the Iron Man movie
-series) were possible? Right now it may just seem like a twinkle in the
-eye of an optimistic visionary, but it may just be more possible than one might
-think. With the isolation of graphene in 2004 at the University of Manchester,
-the dream of faster and smaller built computers may soon possible. But how
-will this new isolate of carbon drastically change computer processors and
-how much different is it compared to the past and present computer
-processors?&lt;/p&gt;
+				<title>Programming Competitions</title>
+				<description>
+					
 
-&lt;div class=&quot;article-image&quot;&gt;
-&lt;iframe width=&quot;636&quot; height=&quot;358&quot; src=&quot;//www.youtube.com/embed/-KPhqy7ZwHU&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+					
+					  
+					
+          			
+					&lt;p&gt;When: Tuesday, February 3 at 5:00 pm &lt;/p&gt;
+					&lt;p&gt;Location: BR 165/166&lt;/p&gt;
+					&lt;p&gt;Presenters: Dmitrii Mudrechenko, Jeff McNertney&lt;/p&gt;&lt;p /&gt;
+					&lt;p&gt;Interested at proving your programming skills to others including potential employers? Programming Competitions are the perfect way to do that! In this informational workshop we will be covering the basics of what programming competitions are and what you should expect if you are attending one. Oh, and did I mention that you could score a job at Google for competing? That&amp;rsquo;s right! Google hosts one of the top programming competitions in the world, Code Jam. Interested but not sure if you got what it takes? Come anyways and show your interest! We&amp;rsquo;re even talking about setting up local practise competitions to help you out when it comes time to compete in larger competitions like Code Jam.&lt;/p&gt;
 
-
-&lt;!-- /article-image --&gt;
-
-
-&lt;!-- &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/-KPhqy7ZwHU&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt; --&gt;
-
-
-&lt;!-- &lt;iframe src=&quot;//www.youtube.com/embed/-KPhqy7ZwHU&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;--&gt;
-
-
-&lt;p&gt;The first obvious difference in computer processors from at least ten years ago
-is the size. A normally priced common processor in the year 2004 may have taken
-a space up of about a 2 inch by 2 inch square. That’s excluding the size of the
-cooling systems, which were also behemoths and taking up almost the entire
-upper portion of the mother board. Also these older processors contained only
-the processor. The front side bus was not integrated and many of them had only
-one core working at a whopping 2 GHz for a high end processor. Without
-integration, processors worked slower. For an example, when someone orders a
-pizza and has it delivered to their house, it would take a much longer time for
-the customer to receive the pizza than if they were in the actual store itself.
-Precious speed is lost in the carrying of data between one piece of technology
-and the other.&lt;/p&gt;
-
-&lt;p&gt;The processors of today have come a long way since ten years ago. Today our
-processors have multiple cores ranging from two to sixteen cores. Cores
-are like separate processors working together and all integrated into one super
-processor. So two cores have two processors built in working in tandem. Also,
-computer processors have been miniaturized to be able to fit in phones and
-tablets. This is available by new technology like enhanced robotics working
-in factories as well as various other machines for micro constructions. One
-big issue with making processor units smaller involves the silicon
-transistors. A transistor is a component used to switch an electronic
-signal and is what creates the binary 0’s and 1’s that the computer uses to
-communicate. &lt;em&gt;“Shrinking transistors delivered corresponding clock speed
-increases and more transistors in the same chip area. Architects used the
-transistor bounty to add memory, prefetching, branch prediction, multiple
-instruction issue, and deeper pipelines. The result was exponential
-single-treaded performance improvements.”&lt;/em&gt; - &lt;a href=&quot;http://cacm.acm.org/magazines/2012/7/151220-looking-back-and-looking-forward/abstract&quot;&gt;Esmaeilzadeh&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Basically, this states that to get more speed is to decrease the transistor
-size and to increase the quantity of the transistors in the core. But where is
-the fan and how do these micro processors stay cool?  Well the new processors
-are positioned on the mother board of the phone or tablet so that they are
-closer to the case of the device. Then the case is built with a material that
-breaths well and conducts temperature so that the movement of you taking your
-device out of your pocket will actually assist in cooling it down. At the same
-time though, the new processors don’t put out very much heat unless they are
-being really worked.  One might ask why companies don’t build desktop computers
-with micro processors. The answer to that is that those micro processors can
-only work so fast and processes a smaller amount of data than the normal sized
-ones. Although these micro processors run faster than the top of the line super
-computers ten years ago, it is still better to run a full sized one in your
-home computer.&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;p&gt;When it was applied to computer processors, it
-clocked at almost 420 GHz! That’s more than 10
-times the fastest speed clocked today!&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;The processors of tomorrow will be something spectacular. Scientists have been
-hard at work, constantly attempting to change and increase the speed of the
-future computers. These ideas range from using biological computers with
-limitless speed and power, to using new elements to work a processor faster.
-One new material is a compound that scientist have just recently found an
-isotope for. It’s called graphene. It is a single atom thick material derived
-from carbon that is super conductive. When it was applied to computer
-processors, it clocked at almost 420 GHz! That’s more than 10 times the fastest
-speed clocked today! Just think of the future of computers if they were all
-running this fast. No more waiting for your computer to start a hefty program
-or even to start up.&lt;/p&gt;
-
-&lt;div class=&quot;article-image&quot;&gt;
-    &lt;img 
-    src=&quot;/assets/img/graphene-structure.jpg&quot; 
-    alt=&quot;Graphene Structure&quot; 
-    data-attribution=&quot;http://www.flickr.com/photos/core-materials/5057399792/&quot; /&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;All this is made possible because of switching the transistor material. The
-current transistor material is made from silicon and is 32-nanometers big
-. It is getting more and more difficult to decrease the size of standard
-silicon transistors. How does graphene make a difference in transistor size and
-core speed? A quote from Miran Pavic’s article, &lt;a href=&quot;http://www.wired.com/gadgetlab/2010/04/graphene-defects-could-lead-to-smaller-electronics&quot;&gt;Graphene Defects Could Lead to
-Smaller Electronics&lt;/a&gt;, states that “In the last few years, graphene, a form of
-carbon derived from graphite oxide, has emerged as a promising alternative to
-silicon. It’s one atom thick and has phenomenal electron mobility – roughly 100
-times greater than silicon.” The article goes on to explain how graphene made
-transistors were built by scientists two years ago and where three times
-smaller than the smallest built ones today.  In 2008, two University of
-Manchester scientists created a 1-nanometer graphene transistor, &lt;a href=&quot;http://www.wired.com/gadgetlab/2010/10/graphene/#ixzz11XeXWfpL&quot;&gt;only one atom
-thick and 10 atoms across&lt;/a&gt;.
-This has been the smallest transistor
-ever built and is claimed to be the absolute physical limit of Moore’s Law
-which states that the number of transistors in a processor is affordably
-doubled every two years. Basically, as the number of transistors
-increases in a chip, the smaller the transistors have to be.&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;p&gt;Within five years, it could begin powering faster
-and better transistors, computer chips, and LCD
-screens, according to researchers who are smitten
-with this new supermaterial.&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;The next big question is why is this not applied to modern electronics yet?
-This is because of any new inventions initial issue; finding cheap effective
-ways to mass produce it. Graphene is not quite as simple to produce compared to
-making an iPhone or any modern computer technology because just about all of
-the modern computer technology that is produced today is still based on
-technology created a decade ago and is miniaturized. &amp;ldquo;The Manchester team that
-created the 1-nanometer graphene transistor first produced graphene in 2004 by
-repeatedly peeling away graphite strips with adhesive tape to isolate a single
-atomic plane.&amp;rdquo; - &lt;a href=&quot;http://www.wired.com/gadgetlab/2010/10/graphene/#ixzz11XeXWfpL&quot;&gt;Carmody&lt;/a&gt;.
-To attempt to upscale this method would cause the
-production of graphene to be too expensive to use on a wide spectrum of
-electronics and it would still cost a fortune to buy those select few products.
-Nevertheless, Elizabeth Svoboda from Discover Magazine writes that &amp;ldquo;Within five
-years, it could begin powering faster and better transistors, computer chips,
-and LCD screens, according to researchers who are smitten with this new
-supermaterial.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Much of the research that is being conducted today on graphene has been
-concentrated on finding effective methods of isolation. No one is really sure
-of its full capabilities and how long it will take to discover an effective
-process of isolation but there is no doubt that it will have a huge effect on
-the world in more ways that can be imagined.&lt;/p&gt;
-
-&lt;!-- And as MIT chemical engineer
-[Michael Strano told Discover magazine](http://discovermagazine.com/2010/jan-feb/07#.UwpndXm5hmY),
-“Graphene is an out-of-the-box material, so we shouldn’t try to hammer it into existing boxes.”
---&gt;
-
-</description>
-				<pubDate>Sun, 23 Feb 2014 09:05:02 -0600</pubDate>
-				<link>http://msumacm.org/02-23-2014/graphene</link>
-				<guid isPermaLink="true">http://msumacm.org/02-23-2014/graphene</guid>
+				</description>
+				<pubDate>Tue, 03 Feb 2015 17:00:00 -0600</pubDate>
+				<link>http://msumacm.org/01-30-2015/Programming-Competitions</link>
+				<guid isPermaLink="true">http://msumacm.org/01-30-2015/Programming-Competitions</guid>
 			</item>
+			
 		
-			<item>
-				<title>An interview with John Schneider, founder of Fargo&#39;s MELD Workshop</title>
-				<description>&lt;p&gt;&lt;em&gt;A &lt;a href=&quot;http://en.wikipedia.org/wiki/Hackerspace&quot;&gt;makerspace&lt;/a&gt; is workspace where people with
-common interests, often in computers, technology,
-science, digital art or electronic art, can meet,
-socialise and/or collaborate. &lt;a href=&quot;http://meldworkshop.com&quot;&gt;MELD Workshop&lt;/a&gt; is a makerspace
-in Fargo that allows members access to their
-cutting edge tools. materials and classes.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3&gt;What was your inspiration for starting MELD workshop?&lt;/h3&gt;
-
-&lt;p&gt;I was wondering what the next big technology thing is and how I can get involved in it - 3D printing was something that kept coming up as a disruptive technology. In the late 70’s and the 80’s, it was personal computing, in the 2000’s you had the internet really starting to take off and now in the 2010s app development and that kind of stuff. 3D printing seemed like the next big thing so I started getting into it. I was looking at getting my own 3D printer but was having a hard time justifying buying one because if it was just me using it, I’d only be using 10% of the time. So what would it be doing the other 90%. It’s not doing anything. To get a decent 3D printer you were looking at $2000 or more and for one person to buy that didn&amp;rsquo;t make sense. I tried to figure out how I can share my 3D printer and from there it was - I setup a business where people can pay a membership fee for sharing a 3D printer doing custom 3D printing services on top of that.&lt;/p&gt;
-
-&lt;p&gt;When I started researching I came across this thing called &lt;em&gt;makerspaces&lt;/em&gt;; so makerspaces aren’t really new but they took the whole shared 3D printer concept and they applied it to more than just 3D printing. Laser cutters, electronics development, metalworking, just a ton of different stuff. I started running the numbers on it and it started to look like something id be able to do. I was surprised the fargo moorhead area doesn&amp;rsquo;t have that already because you have to look at the universities we have in fargo, Concordia, MSUM, the technical schools and NDSU. You have a lot of engineering, drafting, creative people, the arts, business and computer sciences - I mean all that stuff wrapped into one town.&lt;/p&gt;
-
-&lt;p&gt;It was surprising to me that fargo didn&amp;rsquo;t have one of these. Fargo needs one. The demand is there, so why not just open one? Lets just do it. So, thats what I did. I made a business plan, went around talked to the banks, got the financing figured out and now here I am - the space is open.&lt;/p&gt;
-
-&lt;div class=&quot;article-image&quot;&gt;
-    &lt;img src=&quot;/assets/img/meld-profile.jpg&quot; alt=&quot;MELD Profile picture&quot;/&gt;
-&lt;/div&gt;
-
-
-&lt;h3&gt;You should tell us a little bit about yourself&lt;/h3&gt;
-
-&lt;p&gt;I’m John Schneider. I graduated from NDSU in December 2012 with a degree in marketing and a minor in web design. I was doing an internship at &lt;a href=&quot;http://www.sundoginteractive.com&quot;&gt;Sundog&lt;/a&gt; and when I graduated, I got hired there full time. I’m still doing that full time. MELD workshop right now is an evening and weekend thing and I’m hoping to be able to hire someone in the near future so the space can be open during the day too and even have it open 24/7. For that to happen I need to make sure that I’ll be able to pay for all of that. There also needs to be demand from the members where it will make sense. There is no sense in hiring someone just have them here.&lt;/p&gt;
-
-&lt;h3&gt;I&amp;rsquo;m sure it takes a while to have people come in, spread the word out and get them excited, which is a big part of your job?&lt;/h3&gt;
-
-&lt;p&gt;Thats where my marketing degree comes in a little bit. It’s trying to figure how to get people excited. The big thing is that they know about it. Usually when people find out, they get excited. There was a pretty good turn out for the grand opening two weeks ago. There was somewhat between  100 and 150 people who came through here. I was expecting around 60 or 70 and I was pretty optimistic having that many people come in and say that they were looking to getting a membership …  I can’t wait for that to happen. I mean I just cant wait for the people to come in using the equipment and making stuff. I mean that gets me really excited.&lt;/p&gt;
-
-&lt;h3&gt;That is obviously a pretty big turnout for a business that&amp;rsquo;s really new in the community. Would you be  able to tell us who are some of the people that would be the most interested in the MELD workshop and services that you guys provide&lt;/h3&gt;
-
-&lt;p&gt;A lot of people. I’ll start off with college students - there’s people who want to be making stuff but they can’t justify going out and purchasing all the equipment that they need. Let’s say they want to prototype something and 3D printing is the way they wanna do it. Well they would need to have a computer to be designing stuff and they need to have the designs made. They need to have the 3D printer already, so they have to buy it. They have to buy materials and if they are only 3D printing a little bit and they buy an entire spool of material and use only a tenth of it, theres that much extra material that they didn&amp;rsquo;t use.&lt;/p&gt;
-
-&lt;p&gt;You’re gonna have engineers and mechanically inclined people coming in here. Electrically minded people who also have a programming background  might want to work on an Arduino or a Raspberry pi project. Maybe they want to come in here to work on a website and they want to have these people around to bounce their ideas off of and get feedback. Theres gonna be artists too. It is going to be pretty interesting. Within about a month and a half were gonna have a 3D scanner here. That opens up a whole new can of worms as far as art goes. Lets say someone designs something in clay so they sculpt it. They can do things they wouldn’t have been able to do with just clay or do things they weren’t feeling comfortable about doing with the clay. They might want to make a modification to the clay sculpture and they might also want to keep track of all the different stages they went through. Not just as a photograph but an actual 3D representation of what that sculpture is and track all the different iterations and changes. They can cut the sculptures into two pieces, combine them into one and even put that model online as a 3D model. They can make modifications of that piece of work, print and paint it. So thats another type of people who find this place useful.&lt;/p&gt;
-
-&lt;p&gt;You can also use this as a work space. If someone is in an apartment or a dorm or as another good example, a retiree who used to have a big house and a shop where they worked on their projects and now they&amp;rsquo;re downsized. Maybe they&amp;rsquo;re living in an apartment and don’t have a workspace anymore.  Now they can come here and spread their project. For example, on the main floor theres a 14 foot overhead rolling door  - you can pull a RV in here. If you want to put new speakers in your car and its 90 degrees outside and you don’t wanna sweat your ass of, you can bring your car into this air conditioned space and be doing something like that.&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;p&gt;They might not even know what they wanna make
-but they just don’t wanna be a consumer anymore
-and want to participate in creating things.&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;Really its attractive to a lot of different niches. There’s a wide variety of people using the space and they all have the same driving goal where they wanna just make stuff.  They might not even know what they wanna make but they just don’t wanna be a consumer anymore and want to participate in creating things.&lt;/p&gt;
-
-&lt;h3&gt;Thats very unique and very cool. You are actually bringing down a very large barrier to entry right now in place for a lot of markets to a lot of people who don’t have access to expensive or high cost tools&lt;/h3&gt;
-
-&lt;p&gt;It democratizes the entire design process and you’re not held back by the equipment you have or don’t have . You have the idea, you can come here and, it sounds cliche or trite, but make that idea a reality. It doesn’t matter how good the idea is until you do something with it. Its just an idea, its just sitting there, its not worth anything.&lt;/p&gt;
-
-&lt;h3&gt;Tell us why did you wanna choose this and not continue working in your day job&lt;/h3&gt;
-
-&lt;p&gt;I still work full time 40 hours a week at Sundog - but this is where I get to do what I really love. I’m pretty good at understanding how to take digital information and turn it into something physical, something that works in the physical realm. I’m not a very creative person and when it comes to creating, that is not my strength. If someone has an idea, a design and just wants to make it into a physical thing, thats where I can help. I’m a facilitator, I’m not necessarily a creator of things.&lt;/p&gt;
-
-&lt;h3&gt;You should get a business card that says &amp;ldquo;Facilitator&amp;rdquo;&lt;/h3&gt;
-
-&lt;p&gt;☺ I’m an enabler. I&amp;rsquo;m a maker-enabler.&lt;/p&gt;
-
-&lt;h3&gt;Do you have any advice for people that are in school or have graduated and are looking to take on an endeavor such as yourself - maybe starting a new business or even disrupting a certain technology&lt;/h3&gt;
-
-&lt;p&gt;Honestly just get out there and do something. It doesn&amp;rsquo;t even matter what it is, if you have an idea you&amp;rsquo;re just sitting on it. Its not doing anything. It’s not worth anything. It’s not making any one any money, its not making the world a different place. Its not changing anything. If you just sit there and think about it and think about it, thats all you do, just sit there and think about it. Thats all you’re ever gonna have - just the thought. You&amp;rsquo;re never gonna have that thing until you go out there and do something with it.&lt;/p&gt;
-
-&lt;p&gt;Even if its just a website. Lets look at this from a few different points of view. If you’re going to school to be a web developer, you can sit there and look at all the theory all you want and you may know how to make a website but until you have something that you’ve done, until you actually go and make a website to show off to a potential employer, a potential employer is not gonna care how much you know, they’re gonna care how much you’ve done and if you can demonstrate what you know.&lt;/p&gt;
-
-&lt;p&gt;So whether you re doing something that’s purely digital  or whether you just want to come here and make something more physical . you just got to do it. Its the whole Nike thing, just do it.&lt;/p&gt;
-
-&lt;h3&gt;So tell us about the light sabers, the training session where you make your own light sabers&lt;/h3&gt;
-
-&lt;p&gt;One of the classes I&amp;rsquo;m hoping to get put together in the next few months is a way to learn how to use the metal mill and the metal lathe. I want to teach a “how to make your own light saber” class where you take just a plain peace of aluminum, use the mill, the lathe and a bunch of other processes to create your own light saber. If you wanna put some electronics in there and get that figured out, you can do that too. You can have your own very unique light saber. You have this cool thing you’ve made, and in addition, you now have a couple new skill sets - you know how to use metal working equipment. You might have never thought that a mill or a lathe would be something useful but now that you know how to use them, all of a sudden you have ideas that will start coming. There are other people in your class, they may have some ideas too and you can bounce ideas off each other and now you don’t just have the light saber, but something that no one will ever be able to take away from you, this new set of knowledge, thats what I think is really cool.&lt;/p&gt;
-
-&lt;p&gt;The light saber is really cool and theres probably gonna be Star Wars playing in the background in the speakers downstairs cranked up to the max. I’m hoping everyone is geeking out as much as I’ll be but they will be able to walk away with something more.&lt;/p&gt;
-
-&lt;h3&gt;If makerspaces and 3D printing are a solution, what would you say is an interesting or creative problem that they have solved recently&lt;/h3&gt;
-
-&lt;p&gt;If you’re talking specifically about MELD, we just opened up. I haven’t seen too many problems coming through yet, however a recent example - one of the members is working on a rat trap racer which takes a rat trap, think of a mouse trap times 10, and uses it to power a racer, so its somehow tying the spring to the wheels and making them turn, its just got this whole design process going on.&lt;/p&gt;
-
-&lt;p&gt;Its kinds of cool if you look at makerspaces and 3D printing in general; one of the more famous examples is &lt;a href=&quot;https://squareup.com&quot;&gt;Square&lt;/a&gt;, the actual physical reader. The prototype for that was developed in a makerspace in California called &lt;a href=&quot;http://techshop.ws&quot;&gt;Techshop&lt;/a&gt;. This was one of the earlier makerspaces. They were able to take this idea and turn it into a prototype. Before they went out and mass produced there, they were able to get the prototype for real. They probably even went through 7 or 8 iterations before they arrived at their final design.&lt;/p&gt;
-
-&lt;p&gt;If you look at where all the different technologies in makerspaces are going, like 3D printing, they are going to change not just the manufacturing industry but also the fabric of our society. It might get to the point where a job now is not the same as a job 20 years down the line. It introduces a whole host of ethical problems too, for example, now everyones gonna start living longer.  How do you handle that? When the population doesn&amp;rsquo;t turn over anymore, you just have this population that keeps getting added to and are 3D printed organs going to be available to everyone or is it gonna be just the people who can afford it. It introduces this whole healthcare side of things and how you determine who gets what.&lt;/p&gt;
-
-&lt;p&gt;A lot of things are going to change as a result of some of the technology and the businesses out of makerspaces. People that are really skilled in one area, say electronics meet someone skilled in another area say hardware, like the actual mechanical side of things. You may meet someone really skilled in design and aesthetics or someone really skilled in business stuff. you combine all these four skill-sets together, they all have the same mindset, where they want to be making something, they want to be creating something. They are able to fill each others skill gap. This is once again another cliche - the sky is the limit in whats gonna end up coming out of a makerspace.&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s the kind of stuff that excites me. Seeing people make things, seeing people come here and doing things.&lt;/p&gt;
-</description>
-				<pubDate>Tue, 18 Feb 2014 05:45:50 -0600</pubDate>
-				<link>http://msumacm.org/02-18-2014/john-interview-meld</link>
-				<guid isPermaLink="true">http://msumacm.org/02-18-2014/john-interview-meld</guid>
-			</item>
+			
+			
+			
+			
+			
+			
+			
+			
 		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
 	</channel>
 </rss>

@@ -13,8 +13,9 @@
       {% assign datediff = smonth | minus:pmonth %}
       {% if datediff <= 0 and datediff > -7 %}
         <div class="footer-events-blob">
+          <p class="workshop-divider">Current Workshop</p>
         <h3 class="footer-event-title">{{ event.title }}</h3>
-
+        
         <h3 class="footer-event-author">{{ event.author }}</h3>
         {% if event.event-date %}
         <h3 class="footer-event-date">
@@ -54,6 +55,9 @@
 
   {% if datediff <= -7 %}
     <div class="footer-events-blob">
+    {% if include.param == 0 %}
+    <p class="workshop-divider">Next Workshop</p>
+    {% endif %}
       <h3 class="footer-event-title">{{ event.title }}</h3>
 
       <h3 class="footer-event-author">{{ event.author }}</h3>
