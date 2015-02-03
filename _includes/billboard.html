@@ -21,7 +21,7 @@
       {% assign pmonth = event.event-date | date: "%d" | plus:pmonth %}
       {% assign pmonth = event.event-date | date: "%Y" | minus:2013 | times:365 | plus:pmonth %}
       {% assign datediff = smonth | minus:pmonth %}
-      {% if datediff < 0 and datediff > -7 %}
+      {% if datediff <= 0 and datediff > -7 %}
       <p>{{ event.title }}</p>
       {% assign count = 1 %}
       {% break %}
