@@ -1,25 +1,25 @@
-- name: Jeff McNertney
-  role: President
-  year: Junior
-  email: mcnertneje@mnstate.edu
-
 - name: Dmitrii Mudrechenko
-  role: Vice President
+  role: President
   year: Sophomore
   email: mudrechedm@mnstate.edu
 
-- name: Sri Kadimisetty
-  role: Web Meister
-  year: Senior
-  email: kadimisesr@mnstate.edu
-  
+- name: Anthony Ferre
+  role: Vice President
+  year: Sophomore
+  email: ferrean@mnstate.edu
+
 - name: Jake Humphrey
-  role: Secretary
+  role: Web Meister
   year: Sophomore
   email: humphreyja@mnstate.edu
   
-- name: Jessie Deters
+- name: Kelvin Boatey
+  role: Secretary
+  year: Freshman
+  email: boateyke@mnstate.edu
+  
+- name: Stefan Nelson
   role: Treasurer 
-  year: Junior
-  email: detersje@mnstate.edu
+  year: Freshman
+  email: nelsonste@mnstate.edu
 

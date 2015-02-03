@@ -5,6 +5,8 @@ layout: default
 
 {% include navigation.html param='<a href="">pages</a>' %}
 
+{% if page.title == "Sign up for the mailing list" %}{% include info.html %}{% endif %}
+
 <div class="article">
 
 <h1>{{ page.title }}</h1>

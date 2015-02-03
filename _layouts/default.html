@@ -4,21 +4,11 @@
   <title>MSUM ACM</title>
 
   <meta name="description" content="MSUM ACM">
-
-  <!-- [normalize](http://necolas.github.io/normalize.css/) -->
-  <link rel="stylesheet" href="/assets/css/normalize.css">
-
+  <link rel="shortcut icon" href="/assets/img/penguin_superhero.ico"
   <!-- Fonts -->
   <link rel="stylesheet" href="/assets/fonts/bariol-family-stylesheet.css">
-
-  <!-- [lesscss](http://lesscss.org) -->
-  <!-- <link rel="stylesheet/less" type="text/css" href="assets/styles/stylesheet.less"> -->
-  <!-- <script src="assets/js/less-1.6.2.js"></script> -->
+  
   <link rel="stylesheet" href="/css/stylesheet.css">
-
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <!-- <meta name="viewport" content="initial-scale=1"> -->
-  <!-- <meta name="viewport" content="width=device-width"> -->
 
 </head>
 
@@ -26,29 +16,36 @@
   <div id="container">
 
     {{ content }}
+    {% if page.title != "MSUM ACM" %}
+      {% if page.title != 'events' %}
+      
+        <div class="extras">
+        {% if page.title != 'archives' and page.title != 'officers' and page.title != 'Sign up for the mailing list' %}
+          <div class="archive-link"> <a href="/archives/">Visit the archive to read all articles</a>
+          </div><!-- /archive-link -->
+          {% endif %}
+          {% include events.html param=0%}
+        </div><!-- /extras -->
 
+      {% endif %}
+      <div class="extras">
+        {% if page.title != 'events' %}<div class="archive-link"> <a href="/events/">Checkout All workshops &amp; events</a>
+        </div><!-- /archive-link -->{% endif %}
+        {% include participation.html %}
+      </div><!-- /extras -->
 
+      
+    {% else %}
+      <div class="extras">
+        {% include participation.html %}
+      </div>
+    {% endif %}
     <div class="extras">
-      <div class="archive-link"> <a href="/archives/">Visit the archive to read all articles</a>
-      </div><!-- /archive-link -->
-      {% include events.html %}
-    </div><!-- /extras -->
-
-
-    <div class="extras">
-      <div class="archive-link"> <a href="/events/">Checkout Upcoming workshops &amp; events</a>
-      </div><!-- /archive-link -->
-      {% include participation.html %}
-    </div><!-- /extras -->
-
-    <div class="extras">
-      {% include credits.html %}
-    </div><!-- /extras -->
-
-    <div id="appendix">
-      <p><a href="/feed.xml">Subscribe to new articles via RSS</a></p>
+       {% include credits.html %}
+     </div><!-- /extras -->
+     <div id="appendix">
+       <p><a href="/feed.xml">Subscribe to new articles via RSS</a></p>
     </div><!-- /appendix -->
-
   </div><!-- /container -->
 
 

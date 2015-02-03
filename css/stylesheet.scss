@@ -1,6 +1,5 @@
 ---
 # this is the main style sheet for MSUMACM
-# idk if this worked
 ---
 
 @import '0-plugins/plugins-dir';
@@ -86,6 +85,10 @@ p {
   }
 
 }
+
+.first-article {
+  margin-top:4em;
+}
 .article-container {
   border-radius:$radius;
 }
@@ -155,95 +158,101 @@ p {
 .article img:after {
   clear: both;
 }
-.extras {
+.extras, .current-workshop, .info {
   margin-top: 4em;
   border-top: $linestyle;
   position: relative;
+  a {
+    text-decoration: none;
+    color: #578e81;
+    border-bottom: 1px solid #70a89b;
+  }
+  a:hover {
+    color: #000000;
+  }
+  .archive-link{
+    position: absolute;
+    text-align: center;
+    top: -1.5em;
+    left: 0;
+    right: 0;
+    a {
+      display: block;
+      margin: 0 auto;
+      width: $button-size;
+      background-color: $base-button-color;
+      text-decoration: none;
+      padding: 2em;
+      border: $base-button-border;
+      border-radius:$radius;
+      color: $base-button-text-color;
+      text-transform: uppercase;
+      font-size: 0.6em;
+    }
+    @media (min-width: 900px) and (min-height: 1300px) {
+      a {
+        padding:1em;
+        font-size:1em;
+      }
+    }
+    a:hover {
+      border: none;
+      background-color: $hover-button-color;
+      color: $hover-button-text-color;
+    }
+    a:active {
+      border: none;
+      background-color: $active-button-color;
+      color: $active-button-text-color;
+    }
+  }
 }
-.extras a {
-  text-decoration: none;
-  color: #578e81;
-  border-bottom: 1px solid #70a89b;
-}
-.extras a:hover {
-  color: #000000;
-}
-.extras .archive-link {
-  position: absolute;
-  text-align: center;
-  top: -1.5em;
-  left: 0;
-  right: 0;
-}
-.extras .archive-link a {
-  display: block;
-  margin: 0 auto;
-  width: $button-size;
-  background-color: $base-button-color;
-  text-decoration: none;
-  padding: 2em;
-  border: $base-button-border;
-  border-radius:$radius;
-  color: $base-button-text-color;
-  text-transform: uppercase;
-  font-size: 0.6em;
-}
-.extras .archive-link a:hover {
-  border: none;
-  background-color: $hover-button-color;
-  color: $hover-button-text-color;
-}
-.extras .archive-link a:active {
-  border: none;
-  background-color: $active-button-color;
-  color: $active-button-text-color;
+.current-workshop, .info {
+  border:none;
 }
 #credits,
-#footer-events {
+#footer-events,
+.cw-event, .info-event {
   text-align: center;
   margin-top: 4em;
   margin-bottom: 4em;
   color: #91d5c6;
-}
-#credits h2,
-#footer-events h2 {
-  color: $font-color;
-  text-transform: uppercase;
-  font-size: 0.6em;
-  display: inline;
-  padding-bottom: 0.5em;
-  padding-left: 3em;
-  padding-right: 3em;
-  border-bottom: $linestyle;
-}
-#credits .credits-blob h3,
-#footer-events .credits-blob h3 {
-  margin-top: 4em;
-  text-transform: uppercase;
-  font-size: 0.6em;
-  line-height: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-#credits .credits-blob p,
-#footer-events .credits-blob p {
-  margin: 0;
-  padding: 0;
-  margin-top: 0.5em;
-  font-size: 1em;
-}
-#credits .credits-blob p a,
-#footer-events .credits-blob p a {
-  text-decoration: none;
-  color: inherit;
-}
-#credits .credits-blob p a:hover,
-#footer-events .credits-blob p a:hover {
-  color: $hover-link-color;
-}
-#credits .credits-blob p a:active,
-#footer-events .credits-blob p a:active {
-  color: $active-link-color;
+  h2 {
+    color: $font-color;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    display: inline;
+    padding-bottom: 0.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-bottom: $linestyle;
+  }
+  .credits-blob{
+    h3 {
+      margin-top: 4em;
+      text-transform: uppercase;
+      font-size: 0.6em;
+      line-height: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      margin-top: 0.5em;
+      font-size: 1em;
+    }
+    p a,{
+      text-decoration: none;
+      color: inherit;
+    }
+    p a:hover {
+      color: $hover-link-color;
+    }
+    p a:active {
+      color: $active-link-color;
+    }
+  }
 }
 #appendix {
   font-size: 1em;
@@ -318,7 +327,7 @@ p {
 #billboard #billboard-logo,
 #billboard #workshop,
 #billboard #github,
-#billboard #projects,
+#billboard #meetings,
 #billboard #notices,
 #billboard #tweets,
 #billboard #media {
@@ -342,7 +351,7 @@ p {
   color: #69f6d8;
 }
 #billboard #workshop,
-#billboard #notices,
+#billboard #meetings,
 #billboard #media {
   width: 212px;
   background-color: yellow;
@@ -351,7 +360,7 @@ p {
   width: 318px;
   background-color: pink;
 }
-#billboard #projects,
+#billboard #notices,
 #billboard #tweets {
   width: 424px;
   background-color: blue;
@@ -368,11 +377,11 @@ p {
   top: 0;
   left: 318px;
 }
-#billboard #projects {
+#billboard #notices {
   top: 106px;
   left: 0;
 }
-#billboard #notices {
+#billboard #meetings {
   top: 106px;
   left: 424px;
 }
@@ -406,10 +415,10 @@ p {
 #billboard #github {
   background-color: tint($base,20%);
 }
-#billboard #projects {
+#billboard #notices {
   background-color: shade($base,10%);
 }
-#billboard #notices {
+#billboard #meetings {
   background-color: tint($base,30%);
 }
 #billboard #tweets {
@@ -418,8 +427,8 @@ p {
 #billboard #media {
   background-color: shade($base,13%);
 }
-#billboard #billboard-logo {
-  color: #81deca;
+#billboard #billboard-logo h1 {
+  color: $background;
 }
 #billboard #workshop h2,
 #billboard #workshop p {
@@ -429,12 +438,15 @@ p {
 #billboard #github p {
   color: tint($font-color,25%);
 }
-#billboard #projects h2,
-#billboard #projects p {
-  color: #ffffff;
-}
 #billboard #notices h2,
 #billboard #notices p {
+  color: #ffffff;
+}
+#billboard #notices .date{
+  font-size:0.8em;
+}
+#billboard #meetings h2,
+#billboard #meetings p {
   color: tint($font-color,25%);
 }
 #billboard #tweets h2,
@@ -448,7 +460,7 @@ p {
 
 #billboard #workshop:hover,
 #billboard #github:hover,
-#billboard #projects:hover,
+#billboard #meetings:hover,
 #billboard #notices:hover,
 #billboard #tweets:hover,
 #billboard #media:hover {
@@ -457,21 +469,21 @@ p {
 #billboard #billboard-logo:hover h1,
 #billboard #workshop:hover h1,
 #billboard #github:hover h1,
-#billboard #projects:hover h1,
+#billboard #meetings:hover h1,
 #billboard #notices:hover h1,
 #billboard #tweets:hover h1,
 #billboard #media:hover h1,
 #billboard #billboard-logo:hover h2,
 #billboard #workshop:hover h2,
 #billboard #github:hover h2,
-#billboard #projects:hover h2,
+#billboard #meetings:hover h2,
 #billboard #notices:hover h2,
 #billboard #tweets:hover h2,
 #billboard #media:hover h2,
 #billboard #billboard-logo:hover p,
 #billboard #workshop:hover p,
 #billboard #github:hover p,
-#billboard #projects:hover p,
+#billboard #meetings:hover p,
 #billboard #notices:hover p,
 #billboard #tweets:hover p,
 #billboard #media:hover p {
@@ -575,6 +587,7 @@ p {
 #rss-events{
   position: relative;
   top: -70px;
+  text-align: center;
 
   a {
     padding: .6em;
@@ -584,12 +597,27 @@ p {
 }
 
 #article-list {
-  padding-bottom: 6em;
+  text-align: center;
+}
+.article-separator {
+  border-bottom: $linestyle;
 }
 .article-each,
 .event-each {
   padding-bottom: 2em;
-  border-bottom: 1px dashed #a9e9db;
+  padding-top: 2em;
+  border-top: $linestyle;
+}
+.article-each {
+  margin-left:2em;
+  margin-right:2em;
+}
+.article-event{
+  border:none;
+}
+
+.article-each-first {
+  border:none;
 }
 .article-each h1 a,
 .event-each h1 a {
@@ -598,11 +626,11 @@ p {
 }
 .article-each h1 a:hover,
 .event-each h1 a:hover {
-  color: #81deca;
+  color: tint($font-color,25%);
 }
 .article-each h1 a:active,
 .event-each h1 a:active {
-  color: #59d3b9;
+  color: tint($font-color,5%);
 }
 .article-each p,
 .event-each p {
@@ -626,7 +654,7 @@ p {
   display: block;
   margin: 0 auto;
   width: $button-size;
-  background-color: $base;
+  background-color: $base-button-color;
   text-decoration: none;
   padding: 2em;
   border: $base-button-border;
@@ -635,6 +663,7 @@ p {
   text-transform: uppercase;
   font-size: 0.6em;
 }
+
 .promo-read-button a:before {
   content: "a " attr(data-minutes) " minute ";
 }
@@ -647,7 +676,7 @@ p {
 .promo-read-button a:hover {
   border: $hover-button-border;
   background-color: $hover-button-color;
-  color: $base;
+  color: $hover-button-text-color;
 }
 .promo-read-button a:active {
   border: none;
@@ -696,6 +725,114 @@ p {
 #participate p {
   color: $font-color;
 }
+.info-blob{
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 1.5em;
+  h3.info-date{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0.1em;
+  }
+  .info-title {
+    color: $font-color;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0.3em;
+    font-size: 1em;
+  }
+  h3.info-location {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0.1em;
+  }
+  h3.info-date,
+  h3.info-location {
+    color: $font-color;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .info-description {
+    margin-top: 0.75em;
+    padding-top: 0;
+    p {
+      color: $font-color;
+      font-size: 0.9em;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+}
+.cw-event-blob {
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 1.5em;
+  h3.cw-event-author {
+    margin-top: 0.6em;
+  }
+  h3.cw-event-date {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0.1em;
+  }
+  h3.cw-event-location {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0.1em;
+  }
+  h3.cw-event-date,
+  h3.cw-event-author,
+  h3.cw-event-location {
+    color: $font-color;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .cw-event-title {
+    color: $font-color;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0.3em;
+    font-size: 1em;
+  }
+
+  .cw-presentation-data {
+    a {
+      padding: 0.6em;
+      font-size: 11px;
+      font-weight: 400;
+      text-transform: uppercase;
+      border-radius:$radius;
+      text-decoration: none;
+      color: $base-button-text-color;
+      border: $base-button-border;
+      background-color:$base-button-color;
+    }
+    a:hover {
+      color: $hover-button-text-color;
+      background-color: $hover-button-color;
+    }
+    a:active {
+      background-color: $active-button-color;
+    }
+  }
+  .cw-event-description {
+    margin-top: 0em;
+    padding-top: 0;
+    p {
+      color: $font-color;
+      font-size: 0.9em;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+}
+
 .footer-events-blob {
   margin: 0 auto;
   width: 70%;
@@ -704,13 +841,15 @@ p {
 .footer-events-blob h3.footer-event-author {
   margin-top: 0.6em;
 }
-.footer-events-blob h3.footer-event-date {
+.footer-events-blob h3.footer-event-date,
+.footer-events-blob h3.footer-event-location {
   padding-bottom: 0;
   margin-bottom: 0;
   margin-top: 0.1em;
 }
 .footer-events-blob h3.footer-event-date,
-.footer-events-blob h3.footer-event-author {
+.footer-events-blob h3.footer-event-author,
+.footer-events-blob h3.footer-event-location {
   color: $font-color;
   text-transform: uppercase;
   font-size: 0.6em;
@@ -755,7 +894,6 @@ p {
 }
 
 .event-page-description {
-  text-align: left;
   margin-top: 0.9em;
 }
 .event-page-description p {
@@ -826,4 +964,23 @@ p {
 			}
 		}
 	}
+}
+
+#last-tweet{
+  .user{
+    display:none;
+  }
+  .tweet{
+    font-size:0.7em;
+    a{
+      width:auto;
+      height:auto;
+    }
+  }
+  .timePosted{
+    display: none;
+  }
+  .interact{
+    display:none;
+  }
 }
