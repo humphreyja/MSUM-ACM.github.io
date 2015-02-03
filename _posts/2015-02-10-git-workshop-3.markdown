@@ -3,7 +3,7 @@ layout: post
 title:  "Git Set Go!"
 date:   2015-02-03 12:00:00
 event-date: 2015-02-10 17:00:00
-author: "Dmitrii Mudrechnko & Jeff McNertney"
+author: "Jake Humphrey & Jeff McNertney"
 location: BR 165/166
 duration-in-minutes: 60
 presentation-data:
