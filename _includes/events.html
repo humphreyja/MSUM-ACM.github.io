@@ -2,11 +2,48 @@
   <h2>Upcoming Events &amp; Workshops</h2>
 {% assign count = 0 %}
 {% if include.param == 0 %}
-  {% assign eventstoinclude = 0 %}
+  {% assign eventstoinclude = 1 %}
+  {% for event in site.categories.events %}
+      {% assign smonth = site.time | date: "%m" | times:30 %}
+      {% assign pmonth = event.event-date | date: "%m" | times:30 %}
+      {% assign smonth = site.time | date: "%d" | plus:smonth %}
+      {% assign smonth = site.time | date: "%Y" | minus:2013 | times:365 | plus:smonth %}
+      {% assign pmonth = event.event-date | date: "%d" | plus:pmonth %}
+      {% assign pmonth = event.event-date | date: "%Y" | minus:2013 | times:365 | plus:pmonth %}
+      {% assign datediff = smonth | minus:pmonth %}
+      {% if datediff <= 0 and datediff > -7 %}
+        <div class="footer-events-blob">
+        <h3 class="footer-event-title">{{ event.title }}</h3>
+
+        <h3 class="footer-event-author">{{ event.author }}</h3>
+        {% if event.event-date %}
+        <h3 class="footer-event-date">
+        {% assign h = event.event-date | date: "%-H" | plus:6 %}
+        {% if h > 12 %} {% assign TOD = "pm" %} {% else %} {% assign TOD = "am" %}{% endif %}
+          {{ event.event-date | date_to_string }} at {{ h | modulo:12 }}:{{ event.event-date | date: "%M" }} {{ TOD }} 
+        </h3>
+        {% endif %}
+        {% if event.location %}
+        <h3 class="footer-event-location">
+        {{ event.location }}
+        </h3>
+        {% endif %}
+        {% if event.presentation-data %}
+          <h3 class="footer-presentation-data"><a href="{{ event.presentation-data }}">Read Accompanying Material</a></h3>
+        {% endif %}
+
+        <div class="footer-event-description"><p>{{ event.content }}
+        </p></div><!-- /footer-event-description -->
+
+      </div><!-- /footer-events-blob -->
+      {% assign count = count | plus:1 %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
 {% else %}
-  {% assign eventstoinclude = -7 %}
+  {% assign eventstoinclude = 2 %}
 {% endif %}
-{% for event in site.categories.events limit:2 %}
+{% for event in site.categories.events limit:eventstoinclude %}
   {% assign smonth = site.time | date: "%m" | times:30 %}
   {% assign pmonth = event.event-date | date: "%m" | times:30 %}
   {% assign smonth = site.time | date: "%d" | plus:smonth %}
@@ -15,7 +52,7 @@
   {% assign pmonth = event.event-date | date: "%Y" | minus:2013 | times:365 | plus:pmonth %}
   {% assign datediff = smonth | minus:pmonth %}
 
-  {% if datediff <= eventstoinclude %}
+  {% if datediff <= -7 %}
     <div class="footer-events-blob">
       <h3 class="footer-event-title">{{ event.title }}</h3>
 

@@ -5,11 +5,11 @@ title: events
 
 {% include navigation.html param='<a href="/events">workshops &amp; events</a>' %}
 
-<div id="rss-events">
+<!--<div id="rss-events">
   <p>
     <a href="./feed.xml">Subscribe to new events feed via RSS</a>
   </p>
-</div>
+</div>-->
 <div id="article-list">
 {% for event in site.categories.events %}
 {% assign smonth = site.time | date: "%m" | times:30 %}
