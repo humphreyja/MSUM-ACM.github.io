@@ -13,3 +13,4 @@ This project currently contains -
     - Mailing List Instructions
 
 For more information, visit our wiki: [MSUMACM Wiki](https://github.com/MSUM-ACM/MSUM-ACM.github.io/wiki)
+
