@@ -1,7 +1,8 @@
 gitmsg="AUTOBUILD: Build date: $(date --rfc-3339='seconds')"
-logpath="./log"
+logpath="log"
+utilities="_utilities"
 msumpath="/home/jake/msumacm"
-pushd $msumpath 1> /dev/null
+pushd $msumpath/$utilities 1> /dev/null
 git checkout -f
 git fetch origin
 git rebase
