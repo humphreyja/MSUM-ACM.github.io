@@ -19,3 +19,4 @@ if [ $? -ne 0 ]; then
 fi 
 
 popd 1> /dev/null
+echo "AUTOBUILD: Build date: $(date --rfc-3339='seconds')"
