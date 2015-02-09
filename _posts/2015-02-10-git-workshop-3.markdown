@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Git Set Go!"
+title:  "Source Control"
 date:   2015-02-03 12:00:00
 event-date: 2015-02-10 17:00:00
 author: "Jake Humphrey & Jeff McNertney"
