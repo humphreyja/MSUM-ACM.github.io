@@ -6,7 +6,7 @@ event-date: 2015-02-10 17:00:00
 author: "Jake Humphrey & Jeff McNertney"
 location: BR 161
 duration-in-minutes: 60
-presentation-data: /presentation-data/MSUM_ACM_Source_Control_Workshop.pdf
+presentation-data: /presentation-data/WS_source_control.pdf
 categories: events
 ---
 

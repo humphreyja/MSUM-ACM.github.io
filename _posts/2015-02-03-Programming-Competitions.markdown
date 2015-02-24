@@ -6,7 +6,7 @@ event-date: 2015-02-03 17:00:00
 author: "Dmitrii Mudrechenko, Jeff McNertney"
 location: BR 165/166
 duration-in-minutes: 60
-presentation-data: 
+presentation-data: /presentation-data/WS_programming_competitions.pdf
 categories: events
 ---
 
