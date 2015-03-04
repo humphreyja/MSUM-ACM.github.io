@@ -3,7 +3,7 @@
 {% assign count = 0 %}
 {% if include.param == 0 %}
   {% assign eventstoinclude = 1 %}
-  {% for event in site.categories.events %}
+  {% for event in site.categories.events reversed %}
       {% assign smonth = site.time | date: "%m" | times:30 %}
       {% assign pmonth = event.event-date | date: "%m" | times:30 %}
       {% assign smonth = site.time | date: "%d" | plus:smonth %}
@@ -44,7 +44,21 @@
 {% else %}
   {% assign eventstoinclude = 2 %}
 {% endif %}
-{% for event in site.categories.events limit:eventstoinclude %}
+{% assign post_count = 0 %}
+{% for event in site.categories.events reversed %}
+  {% assign smonth = site.time | date: "%m" | times:30 %}
+  {% assign pmonth = event.event-date | date: "%m" | times:30 %}
+  {% assign smonth = site.time | date: "%d" | plus:smonth %}
+  {% assign smonth = site.time | date: "%Y" | minus:2013 | times:365 | plus:smonth %}
+  {% assign pmonth = event.event-date | date: "%d" | plus:pmonth %}
+  {% assign pmonth = event.event-date | date: "%Y" | minus:2013 | times:365 | plus:pmonth %}
+  {% assign datediff = smonth | minus:pmonth %}            
+  {% if datediff <= -7 %}
+    {% assign post_count = post_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+{% for event in site.categories.events reversed limit:post_count %}
   {% assign smonth = site.time | date: "%m" | times:30 %}
   {% assign pmonth = event.event-date | date: "%m" | times:30 %}
   {% assign smonth = site.time | date: "%d" | plus:smonth %}
@@ -52,7 +66,7 @@
   {% assign pmonth = event.event-date | date: "%d" | plus:pmonth %}
   {% assign pmonth = event.event-date | date: "%Y" | minus:2013 | times:365 | plus:pmonth %}
   {% assign datediff = smonth | minus:pmonth %}
-
+  {% if eventstoinclude > 0 %}
   {% if datediff <= -7 %}
     <div class="footer-events-blob">
     {% if include.param == 0 %}
@@ -82,6 +96,8 @@
 
     </div><!-- /footer-events-blob -->
     {% assign count = count | plus:1 %}
+  {% endif %}
+  {% assign eventstoinclude = eventstoinclude | minus:1 %}
   {% endif %}
 {% endfor %}
 {% if count == 0 %}

@@ -58,7 +58,7 @@ title: events
   <p>No Workshop This Week</p>
 {% endif %}
 {% assign separator = 1 %}
-{% for event in site.categories.events %}
+{% for event in site.categories.events reversed %}
 {% assign smonth = site.time | date: "%m" | times:30 %}
   {% assign pmonth = event.event-date | date: "%m" | times:30 %}
   {% assign smonth = site.time | date: "%d" | plus:smonth %}
