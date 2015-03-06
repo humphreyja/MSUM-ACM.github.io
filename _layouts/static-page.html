@@ -3,9 +3,12 @@ layout: default
 ---
 
 
-{% include navigation.html param='<a href="">pages</a>' %}
 
-{% if page.title == "Sign up for the mailing list" %}{% include info.html %}{% endif %}
+
+{% if page.title == "Sign up for the mailing list" %}{% include navigation.html param='<a href="/community">community </a> / <a href="/acm">acm</a> / <a href="/mailinglist">mailing list</a>' %}
+{% else %}
+{% include navigation.html param='<a href="">pages</a>' %}
+{% endif %}
 
 <div class="article">
 
