@@ -267,17 +267,13 @@ p {
   -webkit-opacity: 0.7;
   -moz-opacity: 0.7;
   opacity: 0.7;
-  -webkit-transition-property: opacity;
-  -webkit-transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease;
+  @include transition(opacity .6s);
 }
 #billboard:hover {
   -webkit-opacity: 1.0;
   -moz-opacity: 1.0;
   opacity: 1.0;
-  -webkit-transition-property: opacity;
-  -webkit-transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease;
+  @include transition(opacity .6s);
 }
 #billboard,
 #navigation {
@@ -296,16 +292,12 @@ p {
   -moz-opacity: 0;
   opacity: 0;
   visibility: hidden;
-  transition-property: opacity, visibility;
-  transition-duration: 0.2s, 0;
-  transition-delay: 0, 0.2s;
-  transition-timing-function: ease-in-out;
+  @include transition((opacity,visibility), ease-in-out, .5s);
 }
 #billboard #masthead {
   visibility: visible;
-  -webkit-opacity: 0.8;
-  -moz-opacity: 0.8;
-  opacity: 0.8;
+  opacity: .9;
+  @include transition(opacity, .6s);
   transition-property: opacity;
   transition-duration: 1s;
   transition-delay: 0.2s;
@@ -392,6 +384,17 @@ p {
 #billboard #media {
   top: 212px;
   left: 424px;
+  #community{
+    line-height: 0;
+    padding-bottom: .6em;
+    p{
+      color:  $font-color;
+      padding:0;
+      font-size:.8em;
+      text-align: right;
+      line-height: 0;
+    }
+  }
 }
 #billboard #billboard-logo {
   	background-color: $base-panel-color-1;
@@ -525,6 +528,63 @@ p {
   font-size: 1.166666667em;
   line-height: 1em;
 }
+#icon-nav{
+  height:200px;
+  width:100%;
+  margin-bottom:80px;
+  color:$font-color;
+  @include outer-container;
+  a{
+    height:inherit;
+    color:$font-color;
+    opacity: .6;
+    position:relative;
+    @include transition( all .8s);
+    @include span-columns(4);
+    @include omega(3n);
+    li{
+      position:absolute;
+      bottom:0;
+      font-weight: bold;
+      text-align: center;
+      width:100%;
+    }
+    
+  }
+  #acm{
+    background:url(/assets/img/penguin-acm-icon.svg) no-repeat top center;
+  }
+  #stupro{
+    background:url(/assets/img/student-projects-icon.svg) no-repeat top center;
+  }
+  #getinv{
+    background:url(/assets/img/get-involved-icon.svg) no-repeat top center;
+  }
+  #officers{
+    background:url(/assets/img/acm-officer-icon.svg) no-repeat top center;
+  }
+  #mail{
+    background:url(/assets/img/mail-icon.svg) no-repeat top center;
+  }
+
+  #meetings{
+    background:url(/assets/img/get-involved-icon.svg) no-repeat top center;
+  }
+  #projects{
+    background:url(/assets/img/projects-icon.svg) no-repeat top center;
+  }
+  #articles{
+    background:url(/assets/img/document-icon.svg) no-repeat top center;
+  }
+
+  a:hover{
+    @include transition( all .8s);
+    opacity: 1;
+  }
+}
+#page-subtitle{
+  margin-bottom:80px;
+}
 #navigation {
   width: 100%;
   height: 106px;
@@ -581,7 +641,7 @@ p {
   color: white;
 }
 #navigation #page-title a:hover {
-  //background-color: #81deca;
+  color: shade(white,10%);
 }
 
 #rss-events{

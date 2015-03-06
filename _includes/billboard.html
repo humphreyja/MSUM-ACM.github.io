@@ -41,7 +41,7 @@
   </div><!-- /github -->
 
   <div id="notices" class="billboard-sub-projects">
-    <a href="/mailinglist">
+    <a href="/meetings">
     <h2>Notices &amp; Meeting Updates</h2>
     {% for info in site.categories.info %}
       {% assign smonth = site.time | date: "%m" | times:30 %}
@@ -71,7 +71,7 @@
   <div id="meetings" class="billboard-sub-projects">
     <h2>Weekly Meeting</h2>
       {% for MInfo in site.data.meetinginfo %}
-        <p><a href="/mailinglist">{{ MInfo.day }} {{ MInfo.time }} in {{ MInfo.location }}</a></p>
+        <p><a href="/acm">{{ MInfo.day }} {{ MInfo.time }} in {{ MInfo.location }}</a></p>
       {% break %}
     {% endfor %}
   </div><!-- /meetings -->
@@ -85,9 +85,9 @@
     </a>
     </div><!-- /tweets -->
   <div id="media" class="billboard-sub-projects">
-    <a href="/officers">
-    <h2>Meet the Team</h2>
-    <p>Officers</p>
+    <a href="/community">
+    <h2 id="community">ACM Communtiy<p>Get Involved</p></h2>
+    <p>Officers, Student Projects, and More!</p>
     </a>
   </div><!-- /media -->
 
