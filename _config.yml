@@ -1,8 +1,8 @@
 name: MSUM ACM
 description: The blog of MSUM's ACM chapter
-pygments: true
+highlighter: pygments
 url :   http://msumacm.org
-permalink: /:month-:day-:year/:title
+permalink: /:year/:month/:day/:title
 markdown: rdiscount
 timezone: America/Chicago
 rdiscount:

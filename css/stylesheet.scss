@@ -145,7 +145,7 @@ p {
   font-style: italic;
 }
 .article .article-image {
-  background-color: #97f9e4;
+  background-color: $background;
   max-width: 100%;
   border-radius:$radius;
   overflow: hidden;
@@ -326,6 +326,7 @@ p {
   position: absolute;
   height: 106px;
   z-index: 10;
+  @include transition(background-color .3s);
 }
 #billboard #billboard-logo {
   width: 106px;
@@ -346,16 +347,13 @@ p {
 #billboard #meetings,
 #billboard #media {
   width: 212px;
-  background-color: yellow;
 }
 #billboard #github {
   width: 318px;
-  background-color: pink;
 }
 #billboard #notices,
 #billboard #tweets {
   width: 424px;
-  background-color: blue;
 }
 #billboard #billboard-logo {
   top: 0;
@@ -468,6 +466,7 @@ p {
 #billboard #tweets:hover,
 #billboard #media:hover {
   background-color: $hover-panel-color-1;
+  @include transition(background-color .3s);
 }
 #billboard #billboard-logo:hover h1,
 #billboard #workshop:hover h1,
@@ -594,6 +593,7 @@ p {
   display: block;
   float: left;
   text-overflow: clip;
+  @include transition(background .3s);
 }
 #navigation #logo h1 {
   display: block;
@@ -613,6 +613,7 @@ p {
 }
 #navigation #logo:hover {
   background: $hover-panel-color-1;
+  @include transition(background .3s);
   a{
     color: $hover-panel-text-color-1;
   }
@@ -639,9 +640,11 @@ p {
 #navigation #page-title a {
   text-decoration: none;
   color: white;
+  @include transition(color .1s);
 }
 #navigation #page-title a:hover {
   color: shade(white,10%);
+  @include transition(color .1s);
 }
 
 #rss-events{
@@ -661,6 +664,11 @@ p {
 }
 .article-separator {
   border-bottom: $linestyle;
+}
+.dash-line {
+  border-bottom: $linestyle;
+  margin-top:80px;
+  margin-bottom:80px;
 }
 .article-each,
 .event-each {
@@ -984,6 +992,31 @@ p {
 .event-page-presentation-data a:active {
   background-color: $active-button-color;
 }
+
+.box-link {
+  margin-top: 1.5em;
+}
+.box-link a {
+  padding: 0.6em;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: $radius;
+  text-decoration: none;
+  color: $font-color;
+  border: $base-button-border;
+}
+.box-link a:hover {
+  color: $hover-button-text-color;
+  background-color: $hover-button-color;
+  border: $hover-button-border;
+}
+.box-link a:active {
+  background-color: $active-button-color;
+}
+
+
+
 
 
 #main-header{
