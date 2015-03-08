@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% include navigation.html param='<a href="/community">community</a> / <a href="/student-projects">student projects</a> / <a href="/projects">projects</a>' %}
+
+<div id="article-list" class="article">
+
+  <h1>{{ page.title }}</h1>
+  <div id="meta">
+    <h5>Leader</h5>
+    <p id="meta-primary">{{ page.leader }}</p>
+    <h5>Team</h5>
+    <p id="meta-secondary">{{ page.team }}</p>
+      {% if page.resources %}
+      <div class="meta-presentation-data">
+        <p><a href="{{ page.resources }}">Additional Resources</a></p>
+      </div><!-- /event-page-presentation-data -->
+      {% endif %}
+  </div><!-- /meta -->
+
+  <div class="article-content">
+  {{ content }}
+  </div><!-- /article-content -->
+
+</div><!-- /article -->
