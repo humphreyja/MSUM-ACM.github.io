@@ -15,4 +15,4 @@ This week's workshop looks at some of the things that employers are
 looking for when it comes to Resumes and Interviews, as well as where to 
 look for employment opportunities.  Learn some of the tips and tricks 
 from upper level students who have experianced interviewing and even 
-working for places like _Microsoft_, _Google_, _Myraid_, and more! 
+working for places like Microsoft, Google, Myraid, and more! 

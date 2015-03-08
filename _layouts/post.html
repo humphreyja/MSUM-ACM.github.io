@@ -8,10 +8,6 @@ layout: default
 <div id="article-list" class="article">
 
   <h1>{{ page.title }}</h1>
-{% if page.categories == 'events' %}
-check
-{% endif %}
-
   <div id="meta">
     <p id="meta-primary">{{ page.author }}</p>
     <p id="meta-secondary">{% if page.event-date %}{% assign h = page.event-date | date: "%-H" | plus:6 %}

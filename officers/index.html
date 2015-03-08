@@ -4,7 +4,9 @@ title: officers
 ---
 
 {% include navigation.html param='<a href="/community">community </a> / <a href="/acm">acm</a> / <a href="/officers">officers</a>' %}
-
+<ul id="icon-nav-single">
+<a id="officers" href="/officers/positions"><li>Positions</li></a>
+</ul>
 <div id="article-list">
 {% assign mon = site.time | date: "%m" | plus:0 %}
 {% if mon <= 5 %}{% assign sem = "Spring" %}
