@@ -527,6 +527,37 @@ p {
   font-size: 1.166666667em;
   line-height: 1em;
 }
+#icon-nav-single{
+  height:200px;
+  width:100%;
+  margin-bottom:80px;
+  color:$font-color;
+  @include outer-container;
+  a{
+    height:inherit;
+    color:$font-color;
+    opacity: .6;
+    position:relative;
+    @include transition( all .8s);
+    @include span-columns(4);
+    @include shift(4);
+    li{
+      position:absolute;
+      bottom:0;
+      font-weight: bold;
+      text-align: center;
+      width:100%;
+    }
+    
+  }
+  a:hover{
+    @include transition( all .8s);
+    opacity: 1;
+  }
+   #officers{
+    background:url(/assets/img/acm-officer-icon.svg) no-repeat top center;
+  }
+}
 #icon-nav{
   height:200px;
   width:100%;
@@ -1082,4 +1113,12 @@ p {
   font-weight:bold;
   padding:0;
   margin:0;
+}
+
+#small-text{
+  font-size:.8em;
+  p {
+    margin:0;
+  }
+  margin-bottom: 40px;
 }
